@@ -1,16 +1,31 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
+import LenisAOSWrapper from "@/components/animation/LenisAOSWrapper";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const allianceNo2 = localFont({
+  src: [
+    {
+      path: "../../public/fonts/AllianceNo2Regular.otf",
+      weight: "400",
+      style: "normal",
+    }
+  ],
+  variable: "--font-alliance-no2",
+  display: "swap"
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const ppMori = localFont({
+  src: [
+    {
+      path: "../../public/fonts/PPMori-Regular.otf",
+      weight: "400",
+      style: "normal",
+    }
+  ],
+  variable: "--font-ppmori",
+  display: "swap"
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,8 +39,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+      <body className={`${allianceNo2.variable} ${ppMori.variable} bg-primary-800 text-white`}>
+        <LenisAOSWrapper>
+          {children}
+        </LenisAOSWrapper>
       </body>
     </html>
   );

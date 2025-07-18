@@ -1,0 +1,64 @@
+
+export interface MarqueeChildType {
+  image: string;
+  title: string;
+}
+
+export interface CardType {
+  title: string;
+  value: string;
+  symbol: string;
+  image: string;
+  imageHover: string;
+  className?: string;
+}
+
+export interface ButtonPropsType {
+  link: string;
+  title: string;
+  className?: string;
+  icon?: React.ReactNode;
+}
+
+export interface ImagePropsType {
+  src: string;
+  alt: string;
+  fill: boolean;
+  loading: "eager" | "lazy" | undefined;
+  className?: string;
+}
+
+export interface URLType {
+  title: string;
+  icon: React.ReactNode;
+  subItems?: object;
+}
+
+export interface ResultsDataType {
+  title: string;
+  value: string;
+  symbol: string;
+  image: string;
+  imageHover: string;
+  className: string;
+}
+
+export interface ScrollSectionType {
+  id: number;
+  title: string;
+}
+
+export interface ScrollSectionFeature {
+  "icon": string;
+  "text": string;
+}
+
+export interface ScrollSectionDataType {
+  item?: number;
+  percent?: number;
+  content: {
+    heading: string;
+    subheading: string;
+  };
+  features: ScrollSectionFeature[];
+}
