@@ -7,11 +7,11 @@ export const SideCard = ({ content, features, item, percent }: ScrollSectionData
     <>
       <div className=''>
         <div className='flex items-start justify-center flex-col gap-5 pt-20 pb-10 pr-7 border-b border-primary-50'>
-          <p className='text-primary-800'>Section {item}: {(percent ?? 1 * 100).toFixed(1)}%</p>
-          <p className='font-alliance text-primary-800 text-5xl'>{content?.heading}</p>
-          <p className='text-gray-400 font-ppMori'>{content?.subheading}</p>
+          {/* <p className='text-primary-800'>Section {item}: {(percent ?? 1 * 100).toFixed(1)}%</p> */}
+          <p data-aos="fade-right" data-aos-delay="600" className='font-alliance text-primary-800 text-5xl'>{content?.heading}</p>
+          <p data-aos="fade-right" data-aos-delay="800" className='text-gray-400 font-ppMori'>{content?.subheading}</p>
         </div>
-        <div className='text-primary-800 text-lg flex items-start justify-start flex-col gap-4 pt-10'>
+        <div data-aos="fade-right" data-aos-delay="1000" className='text-primary-800 text-lg flex items-start justify-start flex-col gap-4 pt-10'>
           {
             features?.map((item, key) => (
               <div key={key} className='flex items-center justify-center gap-3'>

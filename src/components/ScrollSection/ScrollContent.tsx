@@ -44,7 +44,7 @@ export default function ScrollContent({ sectionsCount, sectionRefs }: { sections
         <div
           key={index}
           ref={(el) => { sectionRefs.current[index] = el! }}
-          className="h-[80vh] px-6 py-10 border-b border-gray-300 flex items-center text-primary-800 justify-center flex-col"
+          className="h-screen px-6 py-10 border-b border-gray-300 flex items-center text-primary-800 justify-center flex-col"
         >
           <h2 className="text-xl font-bold mb-4">Section {item}</h2>
           <p>

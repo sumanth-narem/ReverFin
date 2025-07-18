@@ -92,6 +92,8 @@ function ScrollSection() {
               {
                 sectionsCount.map((item, index) => (
                   <div key={index}
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
                     className={`cursor-pointer w-full duration-200`}
                     onClick={() => {
                       suppressRef.current = true
@@ -155,7 +157,7 @@ function ScrollSection() {
                 ))
               }
             </div>
-            <div className="w-full h-0.5 flex items-center justify-center flex-row rounded-full overflow-hidden">
+            <div data-aos="fade-up" data-aos-delay="500" className="w-full h-0.5 flex items-center justify-center flex-row rounded-full overflow-hidden">
               {sectionsCount.map((item, index) => (
                 <div
                   key={index}

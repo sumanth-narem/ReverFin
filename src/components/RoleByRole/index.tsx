@@ -4,7 +4,11 @@ import Section from './Section'
 function RbyR() {
   return (
     <>
-      <Section />
+      <div className='w-full flex items-center justify-center flex-col'>
+        <div className='px-12 w-full max-w-[120rem]'>
+          <Section />
+        </div>
+      </div>
     </>
   )
 }

@@ -62,3 +62,8 @@ export interface ScrollSectionDataType {
   };
   features: ScrollSectionFeature[];
 }
+
+export interface RbyRDataType {
+  heading: string;
+  content: string[];
+}

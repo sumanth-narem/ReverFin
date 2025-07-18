@@ -30,15 +30,15 @@ function Header() {
   return (
     <>
       <div className='flex items-center justify-center flex-col w-full'>
-        <div className='border-t border-primary-50 w-full max-w-[120rem] bg-primary-100 px-12 sticky top-10'>
+        <div className='border-t border-primary-50 w-full max-w-[120rem] bg-primary-100 px-12'>
           <div className='border-x border-primary-50 py-20 h-full w-full flex items-start justify-center flex-row overflow-hidden'>
             <div className='basis-1/2 px-10 overflow-y-auto'>
               {steps.map((step, index) => (
                 <div
                   key={index}
-                  className='font-ppMori flex items-start justify-start flex-col border-t border-primary-50 py-5'
+                  className={`font-ppMori flex items-start justify-start flex-col border-t ${openIndex === index ? "border-primary-500" : "border-primary-50"} duration-500 transition-colors py-5`}
                 >
-                  <div className='flex items-center justify-start gap-5 cursor-pointer' onClick={() => handleToggle(index)}>
+                  <div className='flex items-center justify-start gap-5 cursor-pointer w-full' onClick={() => handleToggle(index)}>
                     <div className='flex items-center justify-center bg-primary-800 w-10 h-10 rounded-full pt-1 text-white'>
                       {step.number}
                     </div>
@@ -51,15 +51,14 @@ function Header() {
                 </div>
               ))}
             </div>
-
             <div className='basis-1/2 text-primary-800 px-16 flex items-start justify-start'>
               <div className='flex items-start justify-start flex-col gap-6'>
-                <p className='font-alliance text-4xl'>Getting Started Is Simple</p>
-                <p className='font-ppMori text-lg text-primary-600'>
+                <p data-aos="fade-up" data-aos-delay="200" className='font-alliance text-4xl'>Getting Started Is Simple</p>
+                <p data-aos="fade-up" data-aos-delay="400" className='font-ppMori text-lg text-primary-600'>
                   How it works text non consequatur hic dolor est unde reiciendis
                   laboriosam cum. Sunt at repellendus reiciendis possimus.
                 </p>
-                <div>
+                <div data-aos="fade-up" data-aos-delay="600">
                   <Button
                     title='Get a demo'
                     icon={<ArrowRight width={16} />}
@@ -71,7 +70,6 @@ function Header() {
             </div>
           </div>
         </div>
-        <div className='bg-red-500 h-[50vh] w-full'></div>
       </div>
     </>
   )
