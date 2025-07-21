@@ -5,7 +5,7 @@ import { MarqueeChildType } from '@/types/types';
 function MarqueeChild({ image, title }: MarqueeChildType) {
   return (
     <>
-      <div className='px-5 h-28 flex items-center justify-center border-x border-primary-500'>
+      <div className='px-5 h-20 flex items-center justify-center border-x border-primary-500'>
         <ImageComponent
           src={image}
           fill

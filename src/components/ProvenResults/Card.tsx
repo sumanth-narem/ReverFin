@@ -63,7 +63,7 @@ function Card({ title, value, symbol, image, imageHover, className }: CardType) 
         />
         <ImageComponent
           fill
-          className="h-full w-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 absolute top-0 left-0"
+          className="h-full w-full opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500 absolute top-0 left-0"
           alt={title}
           src={imageHover}
           loading="lazy"
@@ -75,7 +75,7 @@ function Card({ title, value, symbol, image, imageHover, className }: CardType) 
           {displayValue}
           {symbol}
         </p>
-        <p className="mt-4 text-primary-100 group-hover:text-secondary transition-colors duration-500 font-ppMori">
+        <p className="mt-4 text-primary-100 group-hover:text-secondary transition-colors duration-500 text-sm font-ppMori">
           {title}
         </p>
       </div>

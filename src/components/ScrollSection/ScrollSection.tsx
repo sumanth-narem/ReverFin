@@ -84,10 +84,10 @@ function ScrollSection() {
   return (
     <div>
       {/* Main Layout */}
-      <div className="flex items-start justify-start w-full">
+      <div className="flex items-start justify-start w-full py-10">
         {/* LEFT Sticky*/}
-        <div className="sticky top-[5.5rem] basis-1/2 h-screen border-r border-primary-50">
-          <div className="flex items-start flex-col h-20 mt-10 w-full gap-7">
+        <div className="sticky top-20 basis-1/2 h-screen border-r border-primary-50">
+          <div className="flex items-start flex-col w-full gap-7">
             <div className="flex flex-row items-center justify-center w-full gap-5 px-3">
               {
                 sectionsCount.map((item, index) => (
@@ -148,7 +148,7 @@ function ScrollSection() {
                         </div>
                         <div>
                           {scrollSection.map((item, key) => (
-                            <p key={key}>{item?.id === index && item?.title}</p>
+                            <p key={key} className="text-sm">{item?.id === index && item?.title}</p>
                           ))}
                         </div>
                       </div>

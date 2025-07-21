@@ -6,6 +6,7 @@ import Integrations from "@/components/Integrations"
 import NavBar from "@/components/NavBar"
 import PlatformCap from "@/components/PlatformCap"
 import Results from "@/components/ProvenResults"
+import Queries from "@/components/Queries"
 import RbyR from "@/components/RoleByRole"
 import ScrollSection from "@/components/ScrollSection"
 
@@ -24,6 +25,7 @@ export default function HomePage() {
       <div className="bg-primary-100 flex items-center justify-center flex-col w-full">
         <Integrations />
       </div>
+      <Queries />
     </>
   )
 }

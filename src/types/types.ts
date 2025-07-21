@@ -67,3 +67,33 @@ export interface RbyRDataType {
   heading: string;
   content: string[];
 }
+
+export interface GettingStartedType {
+  img: string;
+  heading: string;
+  content: React.ReactNode;
+}
+
+export interface IntegrationsType {
+  name: string;
+  img: string;
+  category: string;
+  content: string;
+}
+
+export interface IntegrationsCardType {
+  item: IntegrationsType;
+  key: number;
+  keyValue: number;
+}
+
+export interface TimeLineContentType {
+  heading: string;
+  completed: boolean;
+  items: React.ReactNode[];
+}
+
+export interface TimeLineDataType {
+  title: string;
+  content: TimeLineContentType;
+}

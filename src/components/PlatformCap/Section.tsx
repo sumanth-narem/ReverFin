@@ -10,35 +10,35 @@ function Section() {
             <div className='flex items-start justify-start flex-row gap-[1px] w-full'>
               <div className='font-ppMori bg-primary-800 rounded-3xl p-5 basis-1/3 h-60'>
                 <p className='text-xl'>Smart Transaction Controls</p>
-                <p className='text-primary-400 mt-3'>Multi-way document matching and AI-led validation for informed, rule-based approvals</p>
+                <p className='text-primary-400 mt-3 text-sm'>Multi-way document matching and AI-led validation for informed, rule-based approvals</p>
               </div>
               <div className='font-ppMori bg-primary-800 rounded-3xl p-5 basis-2/3 h-60'>
                 <p className='text-xl'>AI Document Automation</p>
-                <p className='text-primary-400 mt-3'>Semantic AI reads, tags, verifies, and extracts insights from financial documents auto-matically.</p>
+                <p className='text-primary-400 mt-3 text-sm'>Semantic AI reads, tags, verifies, and extracts insights from financial documents auto-matically.</p>
               </div>
             </div>
             <div className='flex items-start justify-start flex-row gap-[1px] w-full'>
               <div className='font-ppMori bg-primary-800 rounded-3xl p-5 basis-1/3 h-60'>
                 <p className='text-xl'>One-Click Approvals</p>
-                <p className='text-primary-400 mt-3'>Simplified workflows with automated approval collation based on delegation matrices.</p>
+                <p className='text-primary-400 mt-3 text-sm'>Simplified workflows with automated approval collation based on delegation matrices.</p>
               </div>
               <div className='font-ppMori bg-primary-800 rounded-3xl p-5 basis-1/3 h-60'>
                 <p className='text-xl'>Audit-Ready Documentation</p>
-                <p className='text-primary-400 mt-3'>Every document tracked and organized for seamless audit trails and due diligenc</p>
+                <p className='text-primary-400 mt-3 text-sm'>Every document tracked and organized for seamless audit trails and due diligenc</p>
               </div>
               <div className='font-ppMori bg-primary-800 rounded-3xl p-5 basis-1/3 h-60'>
                 <p className='text-xl'>Intelligent Analytics</p>
-                <p className='text-primary-400 mt-3'>Every document tracked and organized for seamless audit trails and due diligenc</p>
+                <p className='text-primary-400 mt-3 text-sm'>Every document tracked and organized for seamless audit trails and due diligenc</p>
               </div>
             </div>
             <div className='flex items-start justify-start flex-row-reverse gap-[1px] w-full'>
               <div className='font-ppMori bg-primary-800 rounded-3xl p-5 basis-1/3 h-60'>
                 <p className='text-xl'>Compliance Management</p>
-                <p className='text-primary-400 mt-3'>Automated compliance across contracts, tax, and regulatory requirements.</p>
+                <p className='text-primary-400 mt-3 text-sm'>Automated compliance across contracts, tax, and regulatory requirements.</p>
               </div>
               <div className='font-ppMori bg-primary-800 rounded-3xl p-5 basis-2/3 h-60'>
                 <p className='text-xl'>Intelligent Integrated Accounting</p>
-                <p className='text-primary-400 mt-3'>Seamless integration and AI driven codification with minimal manual intervention.</p>
+                <p className='text-primary-400 mt-3 text-sm'>Seamless integration and AI driven codification with minimal manual intervention.</p>
               </div>
             </div>
           </div>
