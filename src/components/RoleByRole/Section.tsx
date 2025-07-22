@@ -50,7 +50,7 @@ function Section() {
     <>
       <div ref={containerRef} className='h-[2600px]'>
         <div className='sticky -top-5 flex items-center justify-center flex-wrap border-r border-primary-500'>
-          <div className='py-36 border-r border-primary-500 flex items-start justify-center flex-col basis-1/2 pl-12 w-full'>
+          <div className='py-36 border-r border-primary-500 flex items-start justify-center flex-col basis-1/2 xl:pl-12'>
             <p className='font-alliance text-4xl'>What You Get - Role by Role</p>
             <div className='w-full pt-7'>
               {
@@ -75,13 +75,13 @@ function Section() {
               }
             </div>
           </div>
-          <div className='basis-1/2 flex items-center justify-center'>
+          <div className='basis-1/2 flex items-center justify-center w-full p-5'>
             <ImageComponent
               alt='RbyRImage'
               loading='lazy'
               fill
               src='/assets/RbyR.jpg'
-              className='relative h-[30rem] w-[30rem] rounded-2xl overflow-hidden'
+              className='relative w-full xl:w-[30rem] aspect-square rounded-2xl overflow-hidden'
             />
           </div>
         </div>

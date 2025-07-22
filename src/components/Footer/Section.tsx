@@ -1,9 +1,20 @@
-import React from 'react'
+"use client"
+
+import React, { useEffect, useState } from 'react'
 import ImageComponent from '../ui/Image';
 import Link from 'next/link';
 import { FooterData } from '@/constants/Footer';
 
 function Header() {
+
+  const [year, setYear] = useState<number>(0);
+
+  useEffect(() => {
+    const date = new Date();
+    console.log(date?.getFullYear());
+    setYear(date?.getFullYear());
+  }, []);
+
   return (
     <>
       <div className='w-full px-12 border-b border-footerBorder'>
@@ -67,12 +78,12 @@ function Header() {
         </div>
         <div className='h-20 w-full py-16 px-10 text-[12px] border-x border-footerBorder text-zinc-600 font-ppMori flex items-center justify-between flex-col lg:flex-row gap-2'>
           <div>
-            <p>© Rever 2025. All rights reserved. Privacy Policy, EULA and Terms & conditions. </p>
+            <p>© Rever {year}. All rights reserved. Privacy Policy, EULA and Terms & conditions. </p>
           </div>
           <div className='flex items-center justify-evenly gap-5'>
             <Link className='underline w-min' href={"/"}>Privacy&nbsp;Policy</Link>
             <Link className='underline w-min' href={"/"}>Terms&nbsp;of&nbsp;Service</Link>
-            <Link className='underline w-min' href={"/"}>Cookies&nbsp;Settings</Link>
+            {/* <Link className='underline w-min' href={"/"}>Cookies&nbsp;Settings</Link> */}
           </div>
         </div>
       </div>

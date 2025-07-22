@@ -28,10 +28,17 @@ export interface ImagePropsType {
   className?: string;
 }
 
+export interface SubItems {
+  title: string;
+  link: string;
+  img: string;
+  content: string;
+}
+
 export interface URLType {
   title: string;
   icon?: React.ReactNode;
-  subItems?: object;
+  subItems?: SubItems[];
 }
 
 export interface ResultsDataType {

@@ -5,7 +5,7 @@ import MarqueeChild from './MarqueeChild'
 function MarqueeComponent() {
   return (
     <>
-      <Marquee className='h-20 overflow-y-hidden' autoFill speed={75}>
+      <Marquee className='h-16 sm:h-20 overflow-y-hidden' autoFill speed={75}>
         <MarqueeChild
           image='/assets/businessAndFinance/BOA.svg'
           title='BankOfAmerica'

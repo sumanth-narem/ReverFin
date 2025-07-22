@@ -17,7 +17,7 @@ function Section() {
           </div>
         </div>
         <div className='w-full border-y border-primary-50 mt-12 px-12'>
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-1 lg:grid-cols-2">
             <div className='border-x border-primary-50 p-3 flex items-start justify-start w-full flex-col gap-4'>
               <div className='relative overflow-hidden rounded-xl w-full'>
                 {
@@ -66,7 +66,7 @@ function Section() {
         </div>
         <div className='mt-12'>
           <Button
-            link='/'
+            link='/blog'
             title='Read more'
             // icon={<ArrowRight width={16} className='-mt-0.5'/>}
             icon={<ArrowRight width={14} className='-mt-0.5' />}

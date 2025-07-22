@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import LenisAOSWrapper from "@/components/animation/LenisAOSWrapper";
 import "./globals.css";
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 const allianceNo2 = localFont({
   src: [
@@ -41,7 +43,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${allianceNo2.variable} ${ppMori.variable} bg-primary-800 text-white`}>
         <LenisAOSWrapper>
+          <NavBar />
           {children}
+          <div className="bg-black flex items-center justify-center flex-col w-full">
+            <Footer />
+          </div>
         </LenisAOSWrapper>
       </body>
     </html>

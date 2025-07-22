@@ -12,7 +12,7 @@ function Button({ link, title, className, icon }: ButtonPropsType) {
         target='_blank'
       >
         <div className={`${className}`}>
-          <div className={`flex items-center justify-center text-sm flex-row ${icon ? "gap-2.5" : "gap-0"}`}>
+          <div className={`flex items-center justify-center text-[12px] sm:text-sm flex-row ${icon ? "gap-2.5" : "gap-0"}`}>
             {title}
             {icon}
           </div>

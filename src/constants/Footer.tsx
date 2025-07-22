@@ -11,7 +11,7 @@ export const FooterData: FooterDataType = {
         { title: "About Rever", link: "/about" },
         { title: "Our Team", link: "/team" },
         { title: "Careers", link: "/careers" },
-        { title: "Press Kit", link: "/press-kit" }
+        // { title: "Press Kit", link: "/press-kit" }
     ],
     Resources: [
         { title: "Help Center", link: "/help-center" },

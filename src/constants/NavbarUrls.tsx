@@ -4,10 +4,33 @@ import { ChevronDown } from "lucide-react";
 export const NavbarUrls: URLType[] = [
   {
     title: "Product",
-    // icon: <ChevronDown width={15} className="mt-0.5" />,
-    subItems: {
-
-    }
+    icon: <ChevronDown width={15} className="mt-0.5" />,
+    subItems: [
+      {
+        title: "Mesh",
+        img: "/assets/LogoWhite.svg",
+        link: "/",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
+      },
+      {
+        title: "Warp",
+        img: "/assets/LogoWhite.svg",
+        link: "/",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
+      },
+      {
+        title: "IntelliLens",
+        img: "/assets/LogoWhite.svg",
+        link: "/",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
+      },
+      {
+        title: "Dashboard",
+        img: "/assets/LogoWhite.svg",
+        link: "/",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
+      }
+    ]
   },
   {
     title: "Pricing",
@@ -15,23 +38,92 @@ export const NavbarUrls: URLType[] = [
   },
   {
     title: "Company",
-    // icon: <ChevronDown width={15} className="mt-0.5" />,
-    subItems: {
-
-    }
+    icon: <ChevronDown width={15} className="mt-0.5" />,
+    subItems: [
+      {
+        title: "Mesh",
+        img: "/assets/LogoWhite.svg",
+        link: "/",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
+      },
+      {
+        title: "Warp",
+        img: "/assets/LogoWhite.svg",
+        link: "/",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
+      },
+      {
+        title: "IntelliLens",
+        img: "/assets/LogoWhite.svg",
+        link: "/",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
+      },
+      {
+        title: "Dashboard",
+        img: "/assets/LogoWhite.svg",
+        link: "/",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
+      }
+    ]
   },
   {
     title: "Resources",
-    // icon: <ChevronDown width={15} className="mt-0.5" />,
-    subItems: {
-
-    }
+    icon: <ChevronDown width={15} className="mt-0.5" />,
+    subItems: [
+      {
+        title: "Mesh",
+        img: "/assets/LogoWhite.svg",
+        link: "/",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
+      },
+      {
+        title: "Warp",
+        img: "/assets/LogoWhite.svg",
+        link: "/",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
+      },
+      {
+        title: "IntelliLens",
+        img: "/assets/LogoWhite.svg",
+        link: "/",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
+      },
+      {
+        title: "Dashboard",
+        img: "/assets/LogoWhite.svg",
+        link: "/",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
+      }
+    ]
   },
   {
     title: "Connect",
-    // icon: <ChevronDown width={15} className="mt-0.5" />,
-    subItems: {
-
-    }
+    icon: <ChevronDown width={15} className="mt-0.5" />,
+    subItems: [
+      {
+        title: "Mesh",
+        img: "/assets/LogoWhite.svg",
+        link: "/",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
+      },
+      {
+        title: "Warp",
+        img: "/assets/LogoWhite.svg",
+        link: "/",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
+      },
+      {
+        title: "IntelliLens",
+        img: "/assets/LogoWhite.svg",
+        link: "/",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
+      },
+      {
+        title: "Dashboard",
+        img: "/assets/LogoWhite.svg",
+        link: "/",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
+      }
+    ]
   }
 ];
