@@ -104,3 +104,14 @@ export interface BlogsDataType {
   description?: string;
   img: string;
 }
+
+export type FooterLinkItem = {
+  title: string;
+  link: string;
+};
+
+export type FooterSectionKey = 'Product' | 'Company' | 'Resources' | 'Connect';
+
+export type FooterDataType = {
+  [key in FooterSectionKey]: FooterLinkItem[];
+};

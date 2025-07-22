@@ -1,34 +1,7 @@
 import React from 'react'
 import ImageComponent from '../ui/Image';
 import Link from 'next/link';
-
-const footerData = {
-  Product: [
-    { title: "Features & Integrations", link: "/features-integrations" },
-    { title: "Pricing & Plans", link: "/pricing" },
-    { title: "API Documentation", link: "/api-docs" },
-    { title: "Product Roadmap", link: "/product-roadmap" }
-  ],
-  Company: [
-    { title: "About Rever", link: "/about" },
-    { title: "Our Team", link: "/team" },
-    { title: "Careers", link: "/careers" },
-    { title: "Press Kit", link: "/press-kit" }
-  ],
-  Resources: [
-    { title: "Help Center", link: "/help-center" },
-    { title: "Blog & Guides", link: "/blog" },
-    { title: "Webinars", link: "/webinars" },
-    { title: "Customer Stories", link: "/customer-stories" }
-  ],
-  Connect: [
-    { title: "Contact Sales", link: "/contact-sales" },
-    { title: "Support", link: "/support" },
-    { title: "Newsletter", link: "/newsletter" },
-    { title: "Signup", link: "/signup" }
-  ]
-};
-
+import { FooterData } from '@/constants/Footer';
 
 function Header() {
   return (
@@ -36,13 +9,13 @@ function Header() {
       <div className='w-full px-12 border-b border-footerBorder'>
         <div className='w-full border-x border-footerBorder py-20'>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 bg-black text-white px-10 text-sm">
-            {Object.entries(footerData).map(([section, links]) => (
+            {Object.entries(FooterData).map(([section, links]) => (
               <div key={section}>
                 <h3 className="mb-4 font-ppMori text-xl">{section}</h3>
                 <ul className="space-y-2">
                   {links.map(({ title, link }) => (
                     <li key={title}>
-                      <a href={link} className="hover:underline font-ppMori text-sm text-gray-400 duration-300 transition-all">
+                      <a target='_blank' href={link} className="hover:underline font-ppMori text-sm text-gray-400 duration-300 transition-all">
                         {title}
                       </a>
                     </li>
