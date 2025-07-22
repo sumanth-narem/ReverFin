@@ -30,7 +30,7 @@ export interface ImagePropsType {
 
 export interface URLType {
   title: string;
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   subItems?: object;
 }
 
@@ -96,4 +96,11 @@ export interface TimeLineContentType {
 export interface TimeLineDataType {
   title: string;
   content: TimeLineContentType;
+}
+
+export interface BlogsDataType {
+  type: string;
+  title: string;
+  description?: string;
+  img: string;
 }

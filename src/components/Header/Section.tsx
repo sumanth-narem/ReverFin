@@ -6,7 +6,7 @@ function Header() {
   return (
     <>
       <div className='flex items-center justify-center w-full'>
-        <div className='w-full max-w-[100rem] pt-[5.5rem]'>
+        <div className='w-full max-w-[100rem] pt-16'>
           <div className='px-5 sm:px-8 lg:px-12 h-full w-full border-t border-primary-500'>
             <div className='h-full w-full py-28 2xl:py-36 border-x border-primary-500 flex items-center justify-center flex-col gap-10'>
               <div className='flex items-center justify-center flex-col gap-2 px-3'>

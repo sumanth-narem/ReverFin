@@ -23,6 +23,7 @@ module.exports = {
         },
         "secondary": "#77EB3D",
         "disable": "#707070",
+        "footerBorder": "#2B2B2B",
       },
       fontFamily: {
         "alliance": ["var(--font-alliance-no2)"],

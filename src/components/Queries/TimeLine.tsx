@@ -9,46 +9,84 @@ function TimeLine() {
   const [scrollValue, setScrollValue] = useState<number>(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (containerRef.current) {
+  //       const rect = containerRef.current.getBoundingClientRect();
+  //       const offset = window.innerHeight - rect.top; // or use rect.top for distance from top
+  //       setScrollValue(offset);
+  //       if (scrollValue > 700 && scrollValue < 1400) {
+  //         setActiveTab(1);
+  //       }
+  //       else if (scrollValue > 1400 && scrollValue < 2100) {
+  //         setActiveTab(2);
+  //       }
+  //       else if (scrollValue > 2100) {
+  //         setActiveTab(3);
+  //       }
+  //       else {
+  //         setActiveTab(0);
+  //       }
+  //     }
+  //   };
+
+  //   window.addEventListener('scroll', handleScroll);
+  //   handleScroll(); // trigger initially
+
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, [scrollValue]);
+
   useEffect(() => {
     const handleScroll = () => {
       if (containerRef.current) {
         const rect = containerRef.current.getBoundingClientRect();
-        const offset = window.innerHeight - rect.top; // or use rect.top for distance from top
+        const offset = window.innerHeight - rect.top;
         setScrollValue(offset);
-        if (scrollValue > 700 && scrollValue < 1200) {
-          setActiveTab(1);
-        }
-        else if (scrollValue > 1200 && scrollValue < 1600) {
-          setActiveTab(2);
-        }
-        else if (scrollValue > 1600) {
-          setActiveTab(3);
-        }
-        else {
-          setActiveTab(0);
-        }
       }
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // trigger initially
+    handleScroll();
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [scrollValue]);
+  }, []);
+
+  useEffect(() => {
+    if (scrollValue > 700 && scrollValue < 1400) {
+      if (activeTab !== 1) {
+        setActiveTab(1);
+      }
+    } else if (scrollValue > 1400 && scrollValue < 2100) {
+      if (activeTab !== 2) {
+        setActiveTab(2);
+      }
+    } else if (scrollValue > 2100) {
+      if (activeTab !== 3) {
+        setActiveTab(3);
+      }
+    } else {
+      if (activeTab !== 0) {
+        setActiveTab(0);
+      }
+    }
+  }, [scrollValue, activeTab]);
 
   return (
     <>
-      <div ref={containerRef} className='pt-20 h-[1800px]'>
-        <div className='sticky top-28 flex items-start justify-center flex-row w-full'>
+      <div ref={containerRef} className='pt-20 h-[2600px]'>
+        <div className='sticky top-40 2xl:top-48 flex items-start justify-center flex-row w-full'>
           {
             TimeLineData?.map((time, key) => (
               <div key={key} className='w-full'>
                 <div className='w-full flex items-center justify-center flex-col'>
                   <div
-                    className={`border ${time?.content?.completed ? "border-primary-300" : "border-primary-500"} ${key === activeTab ? "bg-primary-300 text-primary-800" : "text-primary-300"} w-max rounded-xl px-3 py-1 cursor-pointer duration-500 transition-colors`}
+                    className={`border ${time?.content?.completed ? "border-primary-300" : "border-primary-500"} ${key === activeTab ? "bg-primary-300 text-primary-800" : "text-primary-300"} w-max rounded-xl px-3 py-1 cursor-pointer duration-700 transition-colors`}
                   >
+
                     <p className='font-ppMori pt-1'>{time?.title}</p>
                   </div>
                   <div className='relative w-full flex items-center justify-center mt-10'>
@@ -59,7 +97,7 @@ function TimeLine() {
                   </div>
                   {/* {
                     activeTab === key && */}
-                  <div className={`w-full flex items-start justify-start flex-col gap-3 mt-16 overflow-hidden ${activeTab === key ? "max-h-60" : "max-h-0"} h-60 duration-500 transition-all`}>
+                  <div className={`w-full flex items-start justify-start flex-col gap-3 mt-16 overflow-hidden ${activeTab === key ? "max-h-60" : "max-h-0"} h-60 duration-700 transition-all ease-in-out`}>
                     <p className='font-ppMori text-lg'>{time?.content?.heading}</p>
                     <ul className='flex items-start justify-start flex-col w-full gap-3'>
                       {time?.content?.items?.map((item, subKey) => (
