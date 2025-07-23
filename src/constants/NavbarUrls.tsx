@@ -71,25 +71,25 @@ export const NavbarUrls: URLType[] = [
     icon: <ChevronDown width={15} className="mt-0.5" />,
     subItems: [
       {
-        title: "Mesh",
+        title: "Help center",
         img: "/assets/LogoWhite.svg",
         link: "/",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
       },
       {
-        title: "Warp",
+        title: "Blogs & Guides",
+        img: "/assets/LogoWhite.svg",
+        link: "/blog",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
+      },
+      {
+        title: "Webinars",
         img: "/assets/LogoWhite.svg",
         link: "/",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
       },
       {
-        title: "IntelliLens",
-        img: "/assets/LogoWhite.svg",
-        link: "/",
-        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
-      },
-      {
-        title: "Dashboard",
+        title: "Customer Stories",
         img: "/assets/LogoWhite.svg",
         link: "/",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",

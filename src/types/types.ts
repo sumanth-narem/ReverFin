@@ -122,3 +122,12 @@ export type FooterSectionKey = 'Product' | 'Company' | 'Resources' | 'Connect';
 export type FooterDataType = {
   [key in FooterSectionKey]: FooterLinkItem[];
 };
+
+export interface BlogsPageDataType {
+  title: string;
+  tag: string;
+  summary: string;
+  date: string;
+  read_time: string;
+  img: string;
+}

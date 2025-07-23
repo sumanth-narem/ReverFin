@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Section'
 
-function Trail() {
+function Trial() {
   return (
     <>
       <div className='w-full flex items-center justify-center flex-col'>
@@ -13,4 +13,4 @@ function Trail() {
   )
 }
 
-export default Trail
+export default Trial

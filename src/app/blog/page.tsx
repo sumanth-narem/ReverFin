@@ -1,13 +1,14 @@
 "use client"
 
 import React from 'react'
+import Blogs from '@/components/Blog'
 
-function Blogs() {
+function page() {
   return (
     <>
-      <div>Blogs</div>
+      <Blogs />
     </>
   )
 }
 
-export default Blogs
+export default page

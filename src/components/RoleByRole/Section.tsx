@@ -59,7 +59,7 @@ function Section() {
                     <p className='font-ppMori text-xl py-5 w-full cursor-pointer'>{item?.heading}</p>
                     <div className={`overflow-y-hidden ${activeTab === key ? "h-[6rem]" : "h-0"} min-h-0 transition-all duration-500`}>
                       {
-                        <ul className='text-primary-400 pb-5'>
+                        <ul data-aos="fade-right" className='text-primary-400 pb-5'>
                           {
                             item?.content?.map((value, key) => (
                               <li key={key}>

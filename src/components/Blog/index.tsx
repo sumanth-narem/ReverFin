@@ -3,7 +3,7 @@
 import React from 'react'
 import Header from './Section'
 
-function Footer() {
+function Blogs() {
   return (
     <>
       <Header />
@@ -11,4 +11,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default Blogs

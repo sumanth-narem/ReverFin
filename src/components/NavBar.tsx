@@ -11,7 +11,7 @@ export default function NavBar() {
       <nav data-aos="fade-up" className="py-5 px-16 h-16 border-b border-primary-500 flex items-center justify-center flex-row fixed top-0 left-0 z-10 w-screen bg-primary-800">
         <div className="max-w-[100rem] w-full flex items-center justify-between flex-row">
           <div className="flex items-center justify-center flex-row gap-12">
-            <Link href="/" target="_blank">
+            <Link href="/">
               <ImageComponent
                 src="/assets/LogoWhite.svg"
                 alt="Rever Logo"
@@ -20,11 +20,11 @@ export default function NavBar() {
                 className="h-10 w-28 left-0 relative"
               />
             </Link>
-            <ul className="font-alliance flex flex-row gap-7">
+            <ul className="font-alliance flex flex-row gap-5">
               {
                 NavbarUrls?.map((item, key) => {
                   return (
-                    <li key={key} className={`group flex items-center justify-center gap-1 text-sm ${!item?.icon ? "cursor-pointer" : "cursor-default"}`}>
+                    <li key={key} className={`py-2 px-2 group flex items-center justify-center gap-1 text-sm ${!item?.icon ? "cursor-pointer" : "cursor-default"}`}>
                       {item?.title}
                       <div className="group-hover:rotate-180 transition-all duration-500">
                         {item?.icon && item?.icon}

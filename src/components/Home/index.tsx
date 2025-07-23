@@ -11,7 +11,7 @@ import Results from "@/components/ProvenResults"
 import Queries from "@/components/Queries"
 import RbyR from "@/components/RoleByRole"
 import ScrollSection from "@/components/ScrollSection"
-import Trail from "@/components/Trail"
+import Trial from "@/components/Trial"
 
 export default function HomePage() {
   return (
@@ -31,7 +31,7 @@ export default function HomePage() {
       <div className="bg-primary-100 flex items-center justify-center flex-col w-full">
         <Explore />
       </div>
-      <Trail />
+      <Trial />
     </>
   )
 }

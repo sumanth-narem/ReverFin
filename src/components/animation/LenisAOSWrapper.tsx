@@ -10,7 +10,7 @@ import 'aos/dist/aos.css'
 export default function LenisAOSWrapper({ children }: { children: React.ReactNode }) {
     useEffect(() => {
         // Initialize AOS
-        AOS.init({ duration: 800, easing: 'ease-out', delay: 100 })
+        AOS.init({ duration: 800, easing: 'ease-out' })
 
         // Register GSAP ScrollTrigger plugin
         gsap.registerPlugin(ScrollTrigger)
