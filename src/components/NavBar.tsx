@@ -11,7 +11,7 @@ export default function NavBar() {
       <nav data-aos="fade-up" className="py-5 px-16 h-16 border-b border-primary-500 flex items-center justify-center flex-row fixed top-0 left-0 z-10 w-screen bg-primary-800">
         <div className="max-w-[100rem] w-full flex items-center justify-between flex-row">
           <div className="flex items-center justify-center flex-row gap-12">
-            <Link href="/">
+            <Link href="/" target="_blank">
               <ImageComponent
                 src="/assets/LogoWhite.svg"
                 alt="Rever Logo"
@@ -35,7 +35,7 @@ export default function NavBar() {
                           <div className="flex items-center justify-center flex-row w-full">
                             {
                               item?.subItems?.map((subItem, key) => (
-                                <Link href={subItem?.link} key={key} className="w-full flex items-start group/card justify-center flex-col gap-5">
+                                <Link target="_blank" href={subItem?.link} key={key} className="w-full flex items-start group/card justify-center flex-col gap-5">
                                   <div className="flex items-start justify-center px-10 flex-col">
                                     <div className="relative h-24 w-32 flex items-center justify-start">
                                       <ImageComponent

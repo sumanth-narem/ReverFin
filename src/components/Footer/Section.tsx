@@ -27,7 +27,7 @@ function Header() {
                   <ul className="space-y-2">
                     {links.map(({ title, link }) => (
                       <li key={title}>
-                        <Link href={link} className="hover:underline font-ppMori text-sm text-gray-400 duration-300 transition-all">
+                        <Link href={link} target='_blank' className="hover:underline font-ppMori text-sm text-gray-400 duration-300 transition-all">
                           {title}
                         </Link>
                       </li>

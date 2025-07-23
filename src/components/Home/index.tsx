@@ -28,9 +28,9 @@ export default function HomePage() {
         <Integrations />
       </div>
       <Queries />
-      <div className="bg-primary-100 flex items-center justify-center flex-col w-full">
+      {/* <div className="bg-primary-100 flex items-center justify-center flex-col w-full">
         <Explore />
-      </div>
+      </div> */}
       <Trial />
     </>
   )
