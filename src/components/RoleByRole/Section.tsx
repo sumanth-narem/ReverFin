@@ -50,14 +50,14 @@ function Section() {
     <>
       <div ref={containerRef} className='h-[2600px]'>
         <div className='sticky -top-5 flex items-center justify-center flex-wrap border-r border-primary-500'>
-          <div className='py-36 border-r border-primary-500 flex items-start justify-center flex-col basis-1/2 xl:pl-12'>
+          <div className='pb-36 pt-32 border-r border-primary-500 flex items-start justify-center flex-col basis-1/2 xl:pl-12'>
             <p className='font-alliance text-4xl'>What You Get - Role by Role</p>
             <div className='w-full pt-7'>
               {
                 RbyRData?.map((item, key) => (
                   <div key={key} className={`border-b ${activeTab === key ? "border-secondary" : "border-primary-500"} duration-500 transition-colors`}>
-                    <p className='font-ppMori text-xl py-5 w-full cursor-pointer'>{item?.heading}</p>
-                    <div className={`overflow-y-hidden ${activeTab === key ? "h-[6rem]" : "h-0"} min-h-0 transition-all duration-500`}>
+                    <p className='font-ppMori text-xl py-3 w-full cursor-pointer'>{item?.heading}</p>
+                    <div className={`overflow-y-hidden ${activeTab === key ? "h-[8rem]" : "h-0"} min-h-0 transition-all duration-500`}>
                       {
                         <ul data-aos="fade-right" className='text-primary-400 pb-5'>
                           {
@@ -81,7 +81,7 @@ function Section() {
               loading='lazy'
               fill
               src='/assets/RbyR.jpg'
-              className='relative w-full xl:w-[30rem] aspect-square rounded-2xl overflow-hidden'
+              className='relative w-full xl:w-[30rem] aspect-square overflow-hidden rounded-3xl'
             />
           </div>
         </div>

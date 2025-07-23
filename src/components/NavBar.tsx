@@ -43,22 +43,30 @@ export default function NavBar() {
                                         loading="lazy"
                                         alt={subItem?.title}
                                         src={subItem?.img}
-                                        className="absolute h-full w-full group-hover/card:h-28 group-hover/card:w-40 transition-all duration-500 s"
+                                        className="absolute h-full w-full transition-all opacity-100 group-hover/card:opacity-0 duration-500"
+                                      />
+                                      <ImageComponent
+                                        fill
+                                        loading="lazy"
+                                        alt={subItem?.title}
+                                        src={subItem?.hoverImg}
+                                        className="absolute h-full w-full transition-all opacity-0 group-hover/card:opacity-100 duration-500"
                                       />
                                     </div>
                                     <div className="">
-                                      <div className="flex items-center justify-start flex-row w-full gap-2">
+                                      {/* <div className="flex items-center justify-start flex-row w-full gap-2">
                                         <div className="font-ppMori text-center h-7 w-7 rounded-full border border-primary-400 group-hover/card:bg-white flex items-center justify-center transition-all duration-500">
                                           <p className="mt-1 text-primary-400 group-hover/card:text-primary-800 transition-all duration-500">{"0" + (key + 1)}</p>
                                         </div>
                                         <p className="font-alliance text-2xl text-primary-400 group-hover/card:text-white transition-all duration-500">{subItem?.title}</p>
-                                      </div>
+                                      </div> */}
                                     </div>
                                   </div>
                                   <div className="w-full h-1.5 border-y border-primary-500 border-dashed"></div>
                                   {/* <Link href={subItem?.link} key={key} className="w-full px-10 flex items-start group/card justify-center flex-col"> */}
-                                  <div className="px-10">
-                                    <p className="font-alliance text-sm text-primary-400 group-hover/card:text-white transition-all duration-500">{subItem?.content}</p>
+                                  <div className="px-10 flex items-start justify-start gap-3 flex-col">
+                                    <p className="font-alliance text-xl text-primary-400 group-hover/card:text-white transition-all duration-500">{subItem?.title}</p>
+                                    <p className="font-ppMori text-sm text-primary-400 group-hover/card:text-white transition-all duration-500">{subItem?.content}</p>
                                   </div>
                                   {/* </Link> */}
                                 </Link>

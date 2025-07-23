@@ -32,6 +32,7 @@ export interface SubItems {
   title: string;
   link: string;
   img: string;
+  hoverImg: string;
   content: string;
 }
 
@@ -56,11 +57,18 @@ export interface ScrollSectionType {
 }
 
 export interface ScrollSectionFeature {
-  "icon": string;
-  "text": string;
+  icon: string;
+  text: string;
+  content: string;
+}
+
+export interface SideContentType {
+  img: string;
+  content: string;
 }
 
 export interface ScrollSectionDataType {
+  name: string;
   item?: number;
   percent?: number;
   content: {
@@ -68,10 +76,12 @@ export interface ScrollSectionDataType {
     subheading: string;
   };
   features: ScrollSectionFeature[];
+  sideContent: SideContentType;
 }
 
 export interface RbyRDataType {
   heading: string;
+  subHeading: string;
   content: string[];
 }
 

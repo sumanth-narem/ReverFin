@@ -2,7 +2,7 @@
 "use client"
 
 import React, { useEffect, useRef, useState } from "react"
-import { scrollSection, scrollSectionData } from "@/constants/ResultsCardData";
+import { scrollSectionData } from "@/constants/ResultsCardData";
 import { SideCard } from "./SideCard";
 import ScrollContent from "./ScrollContent";
 
@@ -28,7 +28,7 @@ function ScrollSection() {
       },
       {
         root: null,
-        threshold: 0.6,
+        threshold: 0.2,
       }
     )
 
@@ -87,7 +87,7 @@ function ScrollSection() {
       <div className="flex items-start justify-start w-full py-10">
         {/* LEFT Sticky*/}
         <div className="sticky top-20 basis-1/2 h-screen border-r border-primary-50">
-          <div className="flex items-start flex-col w-full gap-7">
+          <div className="flex items-start flex-col w-full gap-4">
             <div className="flex flex-row items-center justify-center w-full gap-5 px-3">
               {
                 sectionsCount.map((item, index) => (
@@ -101,7 +101,7 @@ function ScrollSection() {
                       if (target) {
                         const targetRect = target.getBoundingClientRect()
                         const targetOffset = targetRect.top + window.scrollY
-                        const offsetInsideSection = targetRect.height * 0.20 // scroll to 42%
+                        const offsetInsideSection = targetRect.height * 0.1 // scroll to 42%
                         const y = targetOffset - offsetInsideSection
 
                         const startY = window.scrollY
@@ -147,9 +147,7 @@ function ScrollSection() {
                           {"0" + item}
                         </div>
                         <div>
-                          {scrollSection.map((item, key) => (
-                            <p key={key} className="text-sm">{item?.id === index && item?.title}</p>
-                          ))}
+                          <p className="text-sm">{scrollSectionData[item - 1]?.name}</p>
                         </div>
                       </div>
                     </div>
@@ -169,9 +167,9 @@ function ScrollSection() {
                       style={{
                         width: `${scrollPercents[index] < 0.30
                           ? 0
-                          : scrollPercents[index] >= 0.70
+                          : scrollPercents[index] >= 0.90
                             ? 100
-                            : ((scrollPercents[index] - 0.30) / (0.70 - 0.30)) * 100
+                            : ((scrollPercents[index] - 0.30) / (0.80 - 0.30)) * 100
                           }%`,
                       }}
                     />
@@ -197,10 +195,10 @@ function ScrollSection() {
                   `}
                 >
                   <SideCard
-                    item={item}
                     percent={percent}
                     content={scrollSectionData[index]?.content}
                     features={scrollSectionData[index]?.features}
+                  // sideContent={scrollSectionData[index]?.sideContent}
                   />
                 </li>
               )

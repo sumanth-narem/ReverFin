@@ -8,25 +8,29 @@ export const NavbarUrls: URLType[] = [
     subItems: [
       {
         title: "Mesh",
-        img: "/assets/LogoWhite.svg",
+        img: "/assets/Navbar/Product/Mesh.svg",
+        hoverImg: "/assets/Navbar/Product/MeshHover.svg",
         link: "/",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
       },
       {
         title: "Warp",
-        img: "/assets/LogoWhite.svg",
+        img: "/assets/Navbar/Product/Warp.svg",
+        hoverImg: "/assets/Navbar/Product/WarpHover.svg",
         link: "/",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
       },
       {
         title: "IntelliLens",
-        img: "/assets/LogoWhite.svg",
+        img: "/assets/Navbar/Product/Intellilens.svg",
+        hoverImg: "/assets/Navbar/Product/IntellilensHover.svg",
         link: "/",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
       },
       {
         title: "Dashboard",
-        img: "/assets/LogoWhite.svg",
+        img: "/assets/Navbar/Product/Dashboard.svg",
+        hoverImg: "/assets/Navbar/Product/DashboardHover.svg",
         link: "/",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
       }
@@ -43,24 +47,28 @@ export const NavbarUrls: URLType[] = [
       {
         title: "Mesh",
         img: "/assets/LogoWhite.svg",
+        hoverImg: "/assets/LogoWhite.svg",
         link: "/",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
       },
       {
         title: "Warp",
         img: "/assets/LogoWhite.svg",
+        hoverImg: "/assets/LogoWhite.svg",
         link: "/",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
       },
       {
         title: "IntelliLens",
         img: "/assets/LogoWhite.svg",
+        hoverImg: "/assets/LogoWhite.svg",
         link: "/",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
       },
       {
         title: "Dashboard",
         img: "/assets/LogoWhite.svg",
+        hoverImg: "/assets/LogoWhite.svg",
         link: "/",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
       }
@@ -73,24 +81,28 @@ export const NavbarUrls: URLType[] = [
       {
         title: "Help center",
         img: "/assets/LogoWhite.svg",
+        hoverImg: "/assets/LogoWhite.svg",
         link: "/",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
       },
       {
         title: "Blogs & Guides",
         img: "/assets/LogoWhite.svg",
+        hoverImg: "/assets/LogoWhite.svg",
         link: "/blog",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
       },
       {
         title: "Webinars",
         img: "/assets/LogoWhite.svg",
+        hoverImg: "/assets/LogoWhite.svg",
         link: "/",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
       },
       {
         title: "Customer Stories",
         img: "/assets/LogoWhite.svg",
+        hoverImg: "/assets/LogoWhite.svg",
         link: "/",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
       }
@@ -103,24 +115,28 @@ export const NavbarUrls: URLType[] = [
       {
         title: "Mesh",
         img: "/assets/LogoWhite.svg",
+        hoverImg: "/assets/LogoWhite.svg",
         link: "/",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
       },
       {
         title: "Warp",
         img: "/assets/LogoWhite.svg",
+        hoverImg: "/assets/LogoWhite.svg",
         link: "/",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
       },
       {
         title: "IntelliLens",
         img: "/assets/LogoWhite.svg",
+        hoverImg: "/assets/LogoWhite.svg",
         link: "/",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
       },
       {
         title: "Dashboard",
         img: "/assets/LogoWhite.svg",
+        hoverImg: "/assets/LogoWhite.svg",
         link: "/",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dicta!",
       }

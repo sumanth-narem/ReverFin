@@ -1,20 +1,43 @@
+"use client"
+
 import React from 'react'
 import ImageComponent from '../ui/Image'
-import { ScrollSectionDataType } from '@/types/types'
+import { ScrollSectionFeature } from '@/types/types'
 
-export const SideCard = ({ content, features, item, percent }: ScrollSectionDataType) => {
+export interface SideCardType {
+  content: {
+    heading: string;
+    subheading: string;
+  };
+  features: ScrollSectionFeature[];
+  percent: number;
+}
+
+export const SideCard = ({ content, features, percent }: SideCardType) => {
+  // Normalize percent from 0.3–0.7 to 0–100 scale
+  const normalizedPercent = ((percent - 0.30) / (0.70 - 0.30)) * 100;
+
+  // Determine which feature to show based on normalizedPercent
+  let featureToShowIndex = 2; // default to third one
+  if (normalizedPercent <= 50) {
+    featureToShowIndex = 0;
+  } else if (normalizedPercent <= 100) {
+    featureToShowIndex = 1;
+  }
+
   return (
-    <>
-      <div className=''>
-        <div className='flex items-start justify-center flex-col gap-5 pt-12 pb-7 pr-7 border-b border-primary-50'>
-          {/* <p className='text-primary-800'>Section {item}: {(percent ?? 1 * 100).toFixed(1)}%</p> */}
-          <p data-aos="fade-right" data-aos-delay="600" className='font-alliance text-primary-800 text-4xl'>{content?.heading}</p>
-          <p data-aos="fade-right" data-aos-delay="800" className='text-gray-400 font-ppMori'>{content?.subheading}</p>
-        </div>
-        <div data-aos="fade-right" data-aos-delay="1000" className='text-primary-800 text-lg flex items-start justify-start flex-col gap-4 pt-7'>
-          {
-            features?.map((item, key) => (
-              <div key={key} className='flex items-center justify-center gap-3'>
+    <div className=''>
+      <div className='flex items-start justify-center flex-col gap-5 pt-12 pb-7 pr-7'>
+        <p data-aos="fade-right" data-aos-delay="600" className='font-alliance text-primary-800 text-3xl'>{content?.heading}</p>
+        <p data-aos="fade-right" data-aos-delay="800" className='text-gray-400 font-ppMori'>{content?.subheading}</p>
+        {/* Debug: Show normalized percent */}
+        {/* <p>{normalizedPercent.toFixed(2)}%</p> */}
+      </div>
+      <div data-aos="fade-right" data-aos-delay="1000" className='text-primary-800 text-lg flex items-start justify-start flex-col gap-3'>
+        {
+          features?.map((item, key) => (
+            <div key={key} className='flex items-start justify-start flex-col pt-3 border-t border-primary-50 w-full'>
+              <div className='flex items-center justify-center gap-3'>
                 <ImageComponent
                   src={item?.icon}
                   loading='lazy'
@@ -22,12 +45,16 @@ export const SideCard = ({ content, features, item, percent }: ScrollSectionData
                   alt='Validation'
                   fill
                 />
-                <p className='text-sm'>{item?.text}</p>
+                <p className={`text-base ${featureToShowIndex === key ? "text-primary-800 font-semibold" : "text-primary-500 font-normal"} duration-300 transition-all`}>{item?.text}</p>
               </div>
-            ))
-          }
-        </div>
+              {/* Show only one feature's content based on normalized percentage */}
+              <div className={`${featureToShowIndex === key ? "min-h-5" : "min-h-0"} text-primary-500 h-0 overflow-hidden duration-300 transition-all`}>
+                <p className='text-sm w-[80%] ml-8'>{item?.content}</p>
+              </div>
+            </div>
+          ))
+        }
       </div>
-    </>
+    </div>
   )
 }

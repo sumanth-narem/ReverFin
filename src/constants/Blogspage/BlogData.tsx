@@ -10,9 +10,9 @@ export const BlogsData: BlogsPageDataType[] = [
     "img": "/assets/Blogspage/Blog1.png"
   },
   {
-    "title": "High-Accuracy Data Extraction: Why Generic OCR Isn’t Enough for Finance Operations",
+    "title": "High-Accuracy Data Extraction: Why Generic OCR Isn't Enough for Finance Operations",
     "tag": "Technology",
-    "summary": "Discover why 85–90% OCR accuracy isn’t enough for finance ops. Learn how AI-powered data extraction achieves 99%+ accuracy and transforms AP automation.",
+    "summary": "Discover why 85-90% OCR accuracy isn't enough for finance ops. Learn how AI-powered data extraction achieves 99%+ accuracy and transforms AP automation.",
     "date": "July 8, 2025",
     "read_time": "5 min read",
     "img": "/assets/Blogspage/Blog2.png"
@@ -20,7 +20,7 @@ export const BlogsData: BlogsPageDataType[] = [
   {
     "title": "Smart Approvals in Finance: AI-Powered Workflow Automation",
     "tag": "AI in Finance",
-    "summary": "Transform your finance approval workflows with AI–driven smart approvals. Reduce processing time by 50%, eliminate bottlenecks, and gain strategic insights. Discover how ReverFin’s intelligent automation revolutionizes financial operations.",
+    "summary": "Transform your finance approval workflows with AI-driven smart approvals. Reduce processing time by 50%, eliminate bottlenecks, and gain strategic insights. Discover how ReverFin’s intelligent automation revolutionizes financial operations.",
     "date": "July 8, 2025",
     "read_time": "5 min read",
     "img": "/assets/Blogspage/Blog3.png"
@@ -34,9 +34,9 @@ export const BlogsData: BlogsPageDataType[] = [
     "img": "/assets/Blogspage/Blog4.png"
   },
   {
-    "title": "CFO’s Guide to AP Automation ROI: Strategic Implementation & Cost Savings.",
+    "title": "CFO's Guide to AP Automation ROI: Strategic Implementation & Cost Savings.",
     "tag": "Technology",
-    "summary": "Discover how CFOs achieve 70–80% ROI with AP automation. Get strategic insights on cost reduction, AI integration, and implementation best practices for accounts payable automation success.",
+    "summary": "Discover how CFOs achieve 70-80% ROI with AP automation. Get strategic insights on cost reduction, AI integration, and implementation best practices for accounts payable automation success.",
     "date": "July 8, 2025",
     "read_time": "5 min read",
     "img": "/assets/Blogspage/Blog5.png"
