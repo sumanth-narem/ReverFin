@@ -1,69 +1,3 @@
-// 'use client'
-
-// import { useEffect } from 'react'
-// import gsap from 'gsap'
-// import { ScrollTrigger } from 'gsap/ScrollTrigger'
-// import { scrollSectionData } from '@/constants/ResultsCardData'
-// import ImageComponent from '../ui/Image'
-
-// export default function ScrollContent({ sectionsCount, sectionRefs }: { sectionsCount: number[], sectionRefs: React.RefObject<(HTMLDivElement | null)[]> }) {
-
-//   // useEffect(() => {
-//   //   gsap.registerPlugin(ScrollTrigger)
-
-//   //   sectionRefs.current.forEach((el, index) => {
-//   //     if (!el) return
-
-//   //     gsap.fromTo(
-//   //       el,
-//   //       {
-//   //         scale: 0.7,
-//   //         left: 20,
-//   //         opacity: 0.5,
-//   //       },
-//   //       {
-//   //         scale: 1,
-//   //         opacity: 1,
-//   //         scrollTrigger: {
-//   //           trigger: el,
-//   //           start: 'top 0%',
-//   //           end: 'top 0%',
-//   //           scrub: true,
-//   //         },
-//   //       }
-//   //     )
-
-//   //   })
-
-//   //   return () => {
-//   //     ScrollTrigger.getAll().forEach(trigger => trigger.kill())
-//   //   }
-//   // }, [sectionRefs])
-
-//   return (
-//     <div className="basis-1/2">
-//       {sectionsCount.map((item, index) => (
-//         <div
-//           key={index}
-//           ref={(el) => { sectionRefs.current[index] = el! }}
-//           className="h-[200vh] px-6 py-10 border-b border-gray-300 flex items-center text-primary-800 justify-start flex-col"
-//         >
-//           <div className='sticky top-20 bg-blue-500'>
-//             <h2 className="text-xl font-bold mb-4">{scrollSectionData[item - 1]?.sideContent?.content}</h2>
-//             <ImageComponent
-//               src={scrollSectionData[item - 1]?.sideContent?.img}
-//               fill
-//               loading='lazy'
-//               alt={scrollSectionData[item - 1]?.name}
-//               className='relative h-40 w-40'
-//             />
-//           </div>
-//         </div>
-//       ))}
-//     </div>
-//   )
-// }
-
 'use client'
 
 import { useEffect, useRef } from 'react'
@@ -121,6 +55,7 @@ export default function ScrollContent({
       {sectionsCount.map((item, index) => (
         <div
           key={index}
+          id={scrollSectionData[item - 1]?.name}
           ref={(el) => { sectionRefs.current[index] = el! }}
           className="h-[200vh] px-6 py-10 border-b border-gray-300 flex items-center text-primary-800 justify-start flex-col"
         >
@@ -133,7 +68,7 @@ export default function ScrollContent({
             </div>
             <div
               ref={(el) => { imageRefs.current[index] = el }}
-              className='relative h-72 w-72 overflow-hidden'
+              className='relative w-[70%] aspect-square overflow-hidden'
             >
               <ImageComponent
                 src={scrollSectionData[item - 1]?.sideContent?.img}

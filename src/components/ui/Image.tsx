@@ -7,7 +7,7 @@ function ImageComponent({ src, alt, fill = true, loading, className }: ImageProp
     <>
       <div className={`${className}`}>
         <Image
-          src={src}
+          src={src ?? ""}
           alt={alt}
           fill={fill}
           loading={loading}

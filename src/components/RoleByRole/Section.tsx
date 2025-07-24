@@ -27,15 +27,15 @@ function Section() {
   }, []);
 
   useEffect(() => {
-    if (scrollValue > 700 && scrollValue < 1400) {
+    if (scrollValue > 800 && scrollValue < 1200) {
       if (activeTab !== 1) {
         setActiveTab(1);
       }
-    } else if (scrollValue > 1400 && scrollValue < 2100) {
+    } else if (scrollValue > 1200 && scrollValue < 1600) {
       if (activeTab !== 2) {
         setActiveTab(2);
       }
-    } else if (scrollValue > 2100) {
+    } else if (scrollValue > 1600) {
       if (activeTab !== 3) {
         setActiveTab(3);
       }
@@ -48,18 +48,18 @@ function Section() {
 
   return (
     <>
-      <div ref={containerRef} className='h-[2600px]'>
-        <div className='sticky -top-5 flex items-center justify-center flex-wrap border-r border-primary-500'>
+      <div ref={containerRef} className='h-[2100px]'>
+        <div className='sticky -top-5 flex items-center justify-center flex-wrap border-r border-primary-300 px-10'>
           <div className='pb-36 pt-32 border-r border-primary-500 flex items-start justify-center flex-col basis-1/2 xl:pl-12'>
             <p className='font-alliance text-4xl'>What You Get - Role by Role</p>
             <div className='w-full pt-7'>
               {
                 RbyRData?.map((item, key) => (
-                  <div key={key} className={`border-b ${activeTab === key ? "border-secondary" : "border-primary-500"} duration-500 transition-colors`}>
+                  <div key={key} className={`border-b ${activeTab === key ? "border-secondary" : "border-primary-500"} duration-300 transition-colors`}>
                     <p className='font-ppMori text-xl py-3 w-full cursor-pointer'>{item?.heading}</p>
-                    <div className={`overflow-y-hidden ${activeTab === key ? "h-[8rem]" : "h-0"} min-h-0 transition-all duration-500`}>
+                    <div className={`overflow-y-hidden ${activeTab === key ? "h-[8rem]" : "h-0"} min-h-0 transition-all duration-300`}>
                       {
-                        <ul data-aos="fade-right" className='text-primary-400 pb-5'>
+                        <ul className='text-primary-400 pb-5'>
                           {
                             item?.content?.map((value, key) => (
                               <li key={key}>

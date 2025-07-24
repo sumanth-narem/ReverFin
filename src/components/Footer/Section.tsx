@@ -67,7 +67,7 @@ function Header() {
                 </div>
               </Link>
             </div>
-            <div className='absolute bg-black -bottom-8 w-24 -ml-2'>
+            <div className='absolute bg-black -bottom-8 w-24'>
               <ImageComponent
                 fill
                 loading='lazy'
@@ -79,7 +79,7 @@ function Header() {
           </div>
           <div className='h-20 w-full py-16 px-10 text-[12px] border-x border-footerBorder text-zinc-600 font-ppMori flex items-center justify-between flex-col lg:flex-row gap-2'>
             <div>
-              <p>© Rever {year ?? ""}. All rights reserved. Privacy Policy, EULA and Terms & conditions. </p>
+              <p>© Rever {year ?? ""}. All rights reserved.</p>
             </div>
             <div className='flex items-center justify-evenly gap-5'>
               <Link className='underline w-min' href={"/"}>Privacy&nbsp;Policy</Link>

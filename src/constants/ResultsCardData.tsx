@@ -1,4 +1,4 @@
-import { ResultsDataType, ScrollSectionDataType, ScrollSectionType } from "@/types/types";
+import { ResultsDataType, ScrollSectionDataType } from "@/types/types";
 
 export const resultsData: ResultsDataType[] = [
   {
@@ -46,7 +46,7 @@ export const scrollSectionData: ScrollSectionDataType[] = [
       {
         "icon": "/assets/scrollSection/realTimeValidation.svg",
         "text": "Real-time validation",
-        "content": "Catch inconsistencies and missing data instantly—before they become issues.",
+        "content": "Catch inconsistencies and missing data instantly - before they become issues.",
       },
       {
         "icon": "/assets/scrollSection/MultiwayMatching.svg",
@@ -79,17 +79,17 @@ export const scrollSectionData: ScrollSectionDataType[] = [
       {
         "icon": "/assets/scrollSection/MultiwayMatching.svg",
         "text": "Approval orchestration",
-        "content": "Routes requests to the right stakeholders—even across departments or tools.",
+        "content": "Routes requests to the right stakeholders - even across departments or tools.",
       },
       {
         "icon": "/assets/scrollSection/Risk.svg",
         "text": "Gap detection",
-        "content": "Flags missing GRNs, POs, or fields—and auto-triggers resolution workflows.",
+        "content": "Flags missing GRNs, POs, or fields - and auto - triggers resolution workflows.",
       }
     ],
     "sideContent": {
       "img": "/assets/scrollSection/Warp.svg",
-      "content": "Warp connects fragmented systems into a unified engine for finance ops—helping teams track, approve, and resolve items faster than ever.",
+      "content": "Warp connects fragmented systems into a unified engine for finance ops - helping teams track, approve, and resolve items faster than ever.",
     }
   },
   {
@@ -112,12 +112,12 @@ export const scrollSectionData: ScrollSectionDataType[] = [
       {
         "icon": "/assets/scrollSection/Risk.svg",
         "text": "Insightful analytics",
-        "content": "Breakdowns by user, vendor, amount, status—instantly searchable.",
+        "content": "Breakdowns by user, vendor, amount, status - instantly searchable.",
       }
     ],
     "sideContent": {
       "img": "/assets/scrollSection/IntelliLens.svg",
-      "content": "IntelliLens acts like your financial memory—always on, always organised, and always ready for audit. Just ask, and it delivers clarity.",
+      "content": "IntelliLens acts like your financial memory - always on, always organised, and always ready for audit. Just ask, and it delivers clarity.",
     }
   },
   {
@@ -130,7 +130,7 @@ export const scrollSectionData: ScrollSectionDataType[] = [
       {
         "icon": "/assets/scrollSection/realTimeValidation.svg",
         "text": "Real-time insights",
-        "content": "Monitor approvals, exceptions, cash flow, and spend—all in one view.",
+        "content": "Monitor approvals, exceptions, cash flow, and spend - all in one view.",
       },
       {
         "icon": "/assets/scrollSection/MultiwayMatching.svg",
@@ -140,12 +140,12 @@ export const scrollSectionData: ScrollSectionDataType[] = [
       {
         "icon": "/assets/scrollSection/Risk.svg",
         "text": "Smart alerts & recommendations",
-        "content": "Get notified of bottlenecks, pending actions, and unusual patterns—before they escalate.",
+        "content": "Get notified of bottlenecks, pending actions, and unusual patterns - before they escalate.",
       }
     ],
     "sideContent": {
       "img": "/assets/scrollSection/Dashboard.svg",
-      "content": "The Intelligent Dashboard brings visibility and control into your daily finance operations. Designed for speed and clarity, it helps finance teams prioritize what matters and take action—without the clutter.",
+      "content": "The Intelligent Dashboard brings visibility and control into your daily finance operations. Designed for speed and clarity, it helps finance teams prioritize what matters and take action - without the clutter.",
     }
   }
 ]

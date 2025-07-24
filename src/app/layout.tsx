@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import LenisAOSWrapper from "@/components/animation/LenisAOSWrapper";
 import "./globals.css";
-import NavBar from "@/components/NavBar";
+import NavBar from "@/components/Navbar/NavBar";
 import Footer from "@/components/Footer";
 
 const allianceNo2 = localFont({

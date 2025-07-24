@@ -22,11 +22,11 @@ function HeaderImage() {
             <p data-aos="fade-up" className='text-center text-sm'>Trusted by growing businesses and finance teams worldwide</p>
           </div>
         </div>
-        <div className='w-full max-w-[100rem] border-y border-primary-500 px-5 sm:px-8 lg:px-12'>
+        {/* <div className='w-full max-w-[100rem] border-y border-primary-500 px-5 sm:px-8 lg:px-12'>
           <div data-aos="fade" className='border-x border-primary-500'>
             <MarqueeComponent />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   )

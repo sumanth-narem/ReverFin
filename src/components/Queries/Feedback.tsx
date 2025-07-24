@@ -10,7 +10,7 @@ function Feedback() {
             <p className='font-alliance text-3xl sm:text-4xl lg:text-4xl text-left'>What&apos;s Coming Next - Built with Your Feedback</p>
           </div>
           <div className='flex items-center justify-end basis-1/2 pl-32'>
-            <p className='font-ppMori text-primary-400'>Lorem ipsum multi-way document matching and AI-led validation for informed, rule-based.</p>
+            {/* <p className='font-ppMori text-primary-400'>Lorem ipsum multi-way document matching and AI-led validation for informed, rule-based.</p> */}
           </div>
         </div>
         <div className='px-10'>

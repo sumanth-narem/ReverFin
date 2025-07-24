@@ -9,7 +9,7 @@ function Header() {
       <div className='pt-28 pb-24 px-12 border-b border-primary-500'>
         <div className='flex items-center justify-center flex-col gap-4 pb-12'>
           <p data-aos="fade-up" className='font-alliance text-5xl'>See Rever in Action – Try Live Queries</p>
-          <p data-aos="fade-up" data-aos-delay="200" className='font-ppMori text-lg text-primary-100'>Some metrics text lorem ipsum dolor sit amen</p>
+          {/* <p data-aos="fade-up" data-aos-delay="200" className='font-ppMori text-lg text-primary-100'>Some metrics text lorem ipsum dolor sit amen</p> */}
         </div>
         <div data-aos="fade" data-aos-delay="400" className='max-h-[400px] h-[60vh] w-full border border-primary-500 bg-no-repeat bg-cover flex items-center justify-center' style={{ background: `url(/assets/Background.svg)`, backgroundPosition: "center" }}>
           <form className='border border-primary-300 rounded-2xl bg-primary-800 w-[60%] px-3 py-1 flex items-center justify-start gap-3 h-16'>

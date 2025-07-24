@@ -21,7 +21,7 @@ export interface ButtonPropsType {
 }
 
 export interface ImagePropsType {
-  src: string;
+  src?: string;
   alt: string;
   fill: boolean;
   loading: "eager" | "lazy" | undefined;
@@ -30,9 +30,9 @@ export interface ImagePropsType {
 
 export interface SubItems {
   title: string;
-  link: string;
-  img: string;
-  hoverImg: string;
+  click: () => void;
+  img?: string;
+  hoverImg?: string;
   content: string;
 }
 

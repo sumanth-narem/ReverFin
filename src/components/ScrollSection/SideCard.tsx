@@ -14,11 +14,9 @@ export interface SideCardType {
 }
 
 export const SideCard = ({ content, features, percent }: SideCardType) => {
-  // Normalize percent from 0.3–0.7 to 0–100 scale
   const normalizedPercent = ((percent - 0.30) / (0.70 - 0.30)) * 100;
 
-  // Determine which feature to show based on normalizedPercent
-  let featureToShowIndex = 2; // default to third one
+  let featureToShowIndex = 2;
   if (normalizedPercent <= 50) {
     featureToShowIndex = 0;
   } else if (normalizedPercent <= 100) {
@@ -30,8 +28,6 @@ export const SideCard = ({ content, features, percent }: SideCardType) => {
       <div className='flex items-start justify-center flex-col gap-5 pt-12 pb-7 pr-7'>
         <p data-aos="fade-right" data-aos-delay="600" className='font-alliance text-primary-800 text-3xl'>{content?.heading}</p>
         <p data-aos="fade-right" data-aos-delay="800" className='text-gray-400 font-ppMori'>{content?.subheading}</p>
-        {/* Debug: Show normalized percent */}
-        {/* <p>{normalizedPercent.toFixed(2)}%</p> */}
       </div>
       <div data-aos="fade-right" data-aos-delay="1000" className='text-primary-800 text-lg flex items-start justify-start flex-col gap-3'>
         {

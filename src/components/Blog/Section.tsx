@@ -16,25 +16,25 @@ function Header() {
             </div>
             <div className='mt-12'>
               <div className='flex items-center justify-center flex-row group cursor-pointer'>
-                <div className='h-full aspect-[4/3] p-4 rounded-3xl border border-primary-500 basis-1/2 group-hover:bg-primary-500 duration-500 transition-all'>
+                <div className='h-full aspect-[4/3] p-4 rounded-3xl border border-primary-500 basis-1/2 group-hover:bg-primary-500 group-hover:border-secondary duration-500 transition-all'>
                   <div className='h-full overflow-hidden rounded-3xl'>
                     <ImageComponent
                       src={BlogsData[0]?.img}
                       alt={BlogsData[0]?.title}
                       fill
                       loading='lazy'
-                      className='relative w-full h-full group-hover:scale-110 duration-500 transition-all'
+                      className='relative w-full h-full duration-500 transition-all'
                     />
                   </div>
                 </div>
-                <div className='basis-1/2 p-5 rounded-3xl border border-primary-500 h-full aspect-[4/3] group-hover:bg-primary-500 duration-500 transition-all'>
+                <div className='basis-1/2 p-5 rounded-3xl border border-primary-500 h-full aspect-[4/3] group-hover:bg-primary-500 group-hover:border-secondary duration-500 transition-all'>
                   <div className='font-ppMori text-[12px] border border-primary-400 rounded-full px-3 py-1 w-max bg-primary-800'>
                     <p className='mt-0.5'>{BlogsData[0]?.tag}</p>
                   </div>
                   <div className='flex items-start justify-start flex-col gap-4 mt-4'>
                     <p className='font-alliance text-2xl'>{BlogsData[0]?.title}</p>
-                    <p className='font-ppMori text-sm'>{BlogsData[0]?.summary}</p>
-                    <p className='font-ppMori text-[12px]'>{BlogsData[0]?.date} | {BlogsData[0]?.read_time}</p>
+                    <p className='font-ppMori text-sm text-primary-400'>{BlogsData[0]?.summary}</p>
+                    <p className='font-ppMori text-[12px] text-primary-400'>{BlogsData[0]?.date} | {BlogsData[0]?.read_time}</p>
                   </div>
                 </div>
               </div>
@@ -49,13 +49,13 @@ function Header() {
               </div>
               <div className='flex items-center justify-center flex-row gap-4 pt-12'>
                 <Button
-                  link='https://dev.reverfin.ai/'
+                  link='https://app.reverfin.ai/'
                   title='Contact sales'
                   icon={<ArrowRight width={14} className='-mt-0.5' />}
                   className='bg-secondary flex items-center justify-center px-5 pt-0.5 h-[2.5rem] rounded-full text-primary-800 gap-8'
                 />
                 <Button
-                  link='https://dev.reverfin.ai/'
+                  link='https://app.reverfin.ai/'
                   title='Sign up'
                   // icon={<ArrowRight width={16} className='-mt-0.5'/>}
                   icon={<ArrowRight width={14} className='-mt-0.5' />}

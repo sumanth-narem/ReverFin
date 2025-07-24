@@ -56,15 +56,15 @@ function TimeLine() {
   }, []);
 
   useEffect(() => {
-    if (scrollValue > 700 && scrollValue < 1400) {
+    if (scrollValue > 1000 && scrollValue < 1600) {
       if (activeTab !== 1) {
         setActiveTab(1);
       }
-    } else if (scrollValue > 1400 && scrollValue < 2100) {
+    } else if (scrollValue > 1600 && scrollValue < 2200) {
       if (activeTab !== 2) {
         setActiveTab(2);
       }
-    } else if (scrollValue > 2100) {
+    } else if (scrollValue > 2200) {
       if (activeTab !== 3) {
         setActiveTab(3);
       }
@@ -77,14 +77,14 @@ function TimeLine() {
 
   return (
     <>
-      <div ref={containerRef} className='pt-20 h-[2600px]'>
+      <div ref={containerRef} className='pt-20 h-[2700px]'>
         <div className='sticky top-40 2xl:top-48 flex items-start justify-center flex-row w-full'>
           {
             TimeLineData?.map((time, key) => (
               <div key={key} className='w-full'>
                 <div className='w-full flex items-center justify-center flex-col'>
                   <div
-                    className={`border ${time?.content?.completed ? "border-primary-300" : "border-primary-500"} ${key === activeTab ? "bg-primary-300 text-primary-800" : "text-primary-300"} w-max rounded-xl px-3 py-1 cursor-pointer duration-700 transition-colors`}
+                    className={`border ${time?.content?.completed ? "border-primary-300" : "border-primary-500"} ${key === activeTab ? "bg-primary-300 text-primary-800" : "text-primary-300"} w-max rounded-xl px-3 py-1 cursor-pointer duration-500 transition-colors`}
                   >
 
                     <p className='font-ppMori pt-1'>{time?.title}</p>
@@ -97,13 +97,13 @@ function TimeLine() {
                   </div>
                   {/* {
                     activeTab === key && */}
-                  <div className={`w-full flex items-start justify-start flex-col gap-3 mt-16 overflow-hidden ${activeTab === key ? "max-h-60" : "max-h-0"} h-60 duration-700 transition-all ease-in-out`}>
+                  <div className={`w-full flex items-start justify-start flex-col gap-5 pr-5 mt-16 overflow-hidden ${activeTab === key ? "opacity-100" : "opacity-30"} duration-500 transition-all ease-in-out`}>
                     <p className='font-ppMori text-lg'>{time?.content?.heading}</p>
                     <ul className='flex items-start justify-start flex-col w-full gap-3'>
                       {time?.content?.items?.map((item, subKey) => (
-                        <li key={subKey} className='text-primary-400 font-ppMori flex items-start justify-start flex-row gap-3'>
-                          <div className="text-primary-100">
-                            <Check width={15} />
+                        <li key={subKey} className='text-primary-400 font-ppMori flex items-start justify-start flex-row gap-1'>
+                          <div className="text-primary-100 text-xl -mt-1">
+                            •
                           </div>
                           <p className='text-sm'>{item}</p>
                         </li>

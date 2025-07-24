@@ -44,11 +44,11 @@ function Header() {
   }, []);
 
   useEffect(() => {
-    if (scrollValue > 700 && scrollValue < 1400) {
+    if (scrollValue > 800 && scrollValue < 1200) {
       if (activeTab !== 1) {
         setActiveTab(1);
       }
-    } else if (scrollValue > 1400) {
+    } else if (scrollValue > 1200) {
       if (activeTab !== 2) {
         setActiveTab(2);
       }
@@ -61,7 +61,7 @@ function Header() {
 
   return (
     <>
-      <div ref={containerRef} className='h-[2100px]'>
+      <div ref={containerRef} className='h-[1700px]'>
         <div className='sticky top-0 flex items-center justify-center flex-col w-full'>
           <div className='border-t border-primary-50 w-full max-w-[100rem] bg-primary-100 px-12'>
             <div className='border-x border-primary-50 py-20 h-full w-full flex items-start justify-center flex-row overflow-hidden'>

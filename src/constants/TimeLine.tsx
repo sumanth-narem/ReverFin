@@ -2,50 +2,50 @@ import { TimeLineDataType } from "@/types/types";
 
 export const TimeLineData: TimeLineDataType[] = [
   {
-    title: "2025 Q2",
+    title: "Q2 2025",
     content: {
-      heading: "In Development 1",
+      heading: "Now Available",
       completed: true,
       items: [
-        (<><span className="text-primary-100">R2AR Module:</span> Automated invoicing, dunning, revenue performance forecasting</>),
-        (<><span className="text-primary-100">Advanced Analytics:</span> Benchmarking insights, cost intelligence</>),
-        (<><span className="text-primary-100">Pricing Insights:</span> Revenue optimization recommendations</>),
+        (<><span className="text-primary-100">P2P Automation:</span> 3-way mtching, real-time reconciliation, SOP compliance.</>),
+        (<><span className="text-primary-100">Basic Analytics:</span> Expense accounting, accruals, procurement planning.</>),
+        (<><span className="text-primary-100">Expense Controls:</span> Automated checks and CF forecasting.</>),
       ]
     }
   },
   {
-    title: "2026 Q3",
+    title: "Q3 2026",
     content: {
-      heading: "In Development 2",
+      heading: "In Development",
       completed: false,
       items: [
-        (<><span className="text-primary-100">R2AR Module:</span> Automated invoicing, dunning, revenue performance forecasting</>),
-        (<><span className="text-primary-100">Advanced Analytics:</span> Benchmarking insights, cost intelligence</>),
-        (<><span className="text-primary-100">Pricing Insights:</span> Revenue optimization recommendations</>),
+        (<><span className="text-primary-100">R2AR Module</span> Automated invoicing, dunning, revenue performance forecasting.</>),
+        (<><span className="text-primary-100">Advanced Analytics:</span> Benchmarking insights, cost intelligence.</>),
+        (<><span className="text-primary-100">Pricing Insights:</span> Revenue optimization recommendations.</>),
       ]
     }
   },
   {
-    title: "2027 Q1",
+    title: "Q4 2026",
     content: {
-      heading: "In Development 3",
+      heading: "Coming Soon",
       completed: false,
       items: [
-        (<><span className="text-primary-100">R2AR Module:</span> Automated invoicing, dunning, revenue performance forecasting</>),
-        (<><span className="text-primary-100">Advanced Analytics:</span> Benchmarking insights, cost intelligence</>),
-        (<><span className="text-primary-100">Pricing Insights:</span> Revenue optimization recommendations</>),
+        (<><span className="text-primary-100">Payroll Integration:</span> Validation, SOP compliance, real-time reconciliation.</>),
+        (<><span className="text-primary-100">Talent Analytics:</span> Efficiency insights, time cost planning.</>),
+        (<><span className="text-primary-100">Enhanced Forecasting:</span> ML-powered cash flow predictions.</>),
       ]
     }
   },
   {
-    title: "2027 Q4",
+    title: "Q1 2027",
     content: {
-      heading: "In Development 4",
+      heading: "Planned",
       completed: false,
       items: [
-        (<><span className="text-primary-100">R2AR Module:</span> Automated invoicing, dunning, revenue performance forecasting</>),
-        (<><span className="text-primary-100">Advanced Analytics:</span> Benchmarking insights, cost intelligence</>),
-        (<><span className="text-primary-100">Pricing Insights:</span> Revenue optimization recommendations</>),
+        (<><span className="text-primary-100">Advanced AI Features:</span> Predictive compliance alerts.</>),
+        (<><span className="text-primary-100">Custom Workflows:</span> Industry-specific automation templates.</>),
+        (<><span className="text-primary-100">API Expansions:</span> Enhanced third-party integrations.</>),
       ]
     }
   }
