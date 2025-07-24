@@ -27,7 +27,7 @@ function Section() {
               <div className='col-span-2 font-ppMori bg-primary-800 rounded-3xl p-5 h-[23rem] flex flex-col items-center justify-center'>
                 <div className='w-full'>
                   <p className='text-xl'>AI Document Automation</p>
-                  <p className='text-primary-400 mt-3 text-sm'>Semantic AI reads, tags, verifies, and extracts insights from financial documents auto-matically.</p>
+                  <p className='text-primary-400 mt-3 text-sm'>Semantic AI reads, tags, verifies, and extracts insights from financial documents automatically</p>
                 </div>
                 <div className='w-[60%] flex-grow relative min-h-0 mt-10'>
                   <ImageComponent
@@ -44,7 +44,7 @@ function Section() {
               <div className='font-ppMori bg-primary-800 rounded-3xl p-5 basis-1/3 h-[23rem] flex flex-col items-center justify-center'>
                 <div>
                   <p className='text-xl'>One-Click Approvals</p>
-                  <p className='text-primary-400 mt-3 text-sm'>Simplified workflows with automated approval collation based on delegation matrices.</p>
+                  <p className='text-primary-400 mt-3 text-sm'>Simplified workflows with automated approval collation based on delegation matrices</p>
                 </div>
                 <div className='w-[60%] flex-grow relative min-h-0 my-10'>
                   <ImageComponent
@@ -59,7 +59,7 @@ function Section() {
               <div className='font-ppMori bg-primary-800 rounded-3xl p-5 basis-1/3 h-[23rem] flex flex-col items-center justify-center'>
                 <div>
                   <p className='text-xl'>Audit-Ready Documentation</p>
-                  <p className='text-primary-400 mt-3 text-sm'>Every document tracked and organized for seamless audit trails and due diligenc</p>
+                  <p className='text-primary-400 mt-3 text-sm'>Every document tracked and organized for seamless audit trails and due diligence</p>
                 </div>
                 <div className='w-[60%] flex-grow relative min-h-0 my-10'>
                   <ImageComponent
@@ -74,7 +74,7 @@ function Section() {
               <div className='font-ppMori bg-primary-800 rounded-3xl p-5 basis-1/3 h-[23rem] flex flex-col items-center justify-center'>
                 <div>
                   <p className='text-xl'>Intelligent Analytics</p>
-                  <p className='text-primary-400 mt-3 text-sm'>Every document tracked and organized for seamless audit trails and due diligenc</p>
+                  <p className='text-primary-400 mt-3 text-sm'>Proactive insights and forecasts tied to real business outcomes and cost visibility</p>
                 </div>
                 <div className='w-[60%] flex-grow relative min-h-0 my-10'>
                   <ImageComponent
@@ -91,7 +91,7 @@ function Section() {
               <div className='col-span-2 font-ppMori bg-primary-800 rounded-3xl p-5 basis-2/3 h-[23rem] flex flex-col items-center justify-center'>
                 <div className='w-full'>
                   <p className='text-xl'>Compliance Management</p>
-                  <p className='text-primary-400 mt-3 text-sm'>Automated compliance across contracts, tax, and regulatory requirements.</p>
+                  <p className='text-primary-400 mt-3 text-sm'>Automated compliance across contracts, tax, and regulatory requirements</p>
                 </div>
                 <div className='w-[60%] flex-grow relative min-h-0 my-10'>
                   <ImageComponent
@@ -106,7 +106,7 @@ function Section() {
               <div className='col-span-1 font-ppMori bg-primary-800 rounded-3xl p-5 basis-1/3 h-[23rem] flex flex-col items-center justify-center'>
                 <div>
                   <p className='text-xl'>Intelligent Integrated Accounting</p>
-                  <p className='text-primary-400 mt-3 text-sm'>Seamless integration and AI driven codification with minimal manual intervention.</p>
+                  <p className='text-primary-400 mt-3 text-sm'>Seamless integration and AI driven codification with minimal manual intervention</p>
                 </div>
                 <div className='w-[60%] flex-grow relative min-h-0 my-10'>
                   <ImageComponent

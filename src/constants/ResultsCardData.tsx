@@ -84,7 +84,7 @@ export const scrollSectionData: ScrollSectionDataType[] = [
       {
         "icon": "/assets/scrollSection/Risk.svg",
         "text": "Gap detection",
-        "content": "Flags missing GRNs, POs, or fields - and auto - triggers resolution workflows.",
+        "content": "Flags missing GRNs, POs, or fields -and auto - triggers resolution workflows.",
       }
     ],
     "sideContent": {

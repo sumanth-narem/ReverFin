@@ -44,7 +44,7 @@ export const SideCard = ({ content, features, percent }: SideCardType) => {
                 <p className={`text-base ${featureToShowIndex === key ? "text-primary-800 font-semibold" : "text-primary-500 font-normal"} duration-300 transition-all`}>{item?.text}</p>
               </div>
               {/* Show only one feature's content based on normalized percentage */}
-              <div className={`${featureToShowIndex === key ? "min-h-5" : "min-h-0"} text-primary-500 h-0 overflow-hidden duration-300 transition-all`}>
+              <div className={`${featureToShowIndex === key ? "min-h-10" : "min-h-0"} text-primary-500 h-0 overflow-hidden duration-300 transition-all`}>
                 <p className='text-sm w-[80%] ml-8'>{item?.content}</p>
               </div>
             </div>

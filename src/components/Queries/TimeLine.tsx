@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import { TimeLineData } from '@/constants/TimeLine'
-import { Check } from 'lucide-react';
 
 function TimeLine() {
   const [activeTab, setActiveTab] = useState<number>(0);

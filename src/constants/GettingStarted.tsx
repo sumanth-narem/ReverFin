@@ -4,7 +4,7 @@ export const gettingStarted: GettingStartedType[] = [
   {
     img: "/assets/GettingStarted/Integration.svg",
     heading: "Connect Your Tools",
-    content: (<><span className="text-primary-800">One-click integrations</span> Connect to QuickBooks, NetSuite, Sage, and 70+ other tools. Nodisruption to existing workflows</>),
+    content: (<><span className="text-primary-800">One-click integrations</span> Connect to QuickBooks, NetSuite, Sage, and 70+ other tools. No disruption to existing workflows</>),
   },
   {
     img: "/assets/GettingStarted/Upload.svg",

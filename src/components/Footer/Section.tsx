@@ -44,13 +44,13 @@ function Header() {
               <p className='font-alliance text-4xl'>Modern AI Assistant for Finance</p>
             </div>
             <div className='flex items-start justify-center gap-3'>
-              <Link href={"/"}>
+              <Link href={"https://x.com/Reverfin?t=rZ1aVuSsz85b-tuY0dqQUg&s=09"} target='_blank'>
                 <div className='bg-zinc-900 p-3 rounded-lg'>
                   <ImageComponent
                     fill
                     loading='lazy'
                     alt='X'
-                    src='/assets/X.svg'
+                    src='/assets/Social/X.svg'
                     className='relative h-4 w-4'
                   />
                 </div>
@@ -61,7 +61,7 @@ function Header() {
                     fill
                     loading='lazy'
                     alt='LinkedIn'
-                    src='/assets/LinkedIn.svg'
+                    src='/assets/Social/LinkedIn.svg'
                     className='relative h-4 w-4'
                   />
                 </div>
@@ -82,9 +82,9 @@ function Header() {
               <p>© Rever {year ?? ""}. All rights reserved.</p>
             </div>
             <div className='flex items-center justify-evenly gap-5'>
-              <Link className='underline w-min' href={"/"}>Privacy&nbsp;Policy</Link>
-              <Link className='underline w-min' href={"/"}>Terms&nbsp;of&nbsp;Service</Link>
-              {/* <Link className='underline w-min' href={"/"}>Cookies&nbsp;Settings</Link> */}
+              <Link className='underline w-min' target='_blank' href={"/legal/privacy-policy"}>Privacy&nbsp;Policy</Link>
+              <Link className='underline w-min' target='_blank' href={"/legal/terms-and-conditions"}>Terms&nbsp;and&nbsp;Conditions</Link>
+              <Link className='underline w-min' target='_blank' href={"/legal/eula"}>EULA</Link>
             </div>
           </div>
         </div>

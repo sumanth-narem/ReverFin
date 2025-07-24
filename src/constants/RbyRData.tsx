@@ -16,9 +16,9 @@ export const RbyRData: RbyRDataType[] = [
         subHeading: "Amplify Your Impact",
         content: [
             "• Eliminate manual data entry",
-            "• Improved Focus on issues and analytics",
+            "• Improved focus on issues and analytics",
             "• Automated reconciliations",
-            "• Advanced analytics over spreadsheets",
+            "• Advanced analytics conducted on spreadsheets",
         ]
     },
     {

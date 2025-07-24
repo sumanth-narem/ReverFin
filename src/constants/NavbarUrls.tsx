@@ -65,13 +65,14 @@ export function useNavbarUrls(): URLType[] {
           img: "/assets/Navbar/Product/Dashboard.svg",
           hoverImg: "/assets/Navbar/Product/DashboardHover.svg",
           click: () => scrollOrNavigate("Dashboard"),
-          content: "Insights in real time",
+          content: "Provides insights that connect transactions, timelines, and team actions",
         }
       ]
     },
     {
       title: "Pricing",
-      icon: null
+      icon: null,
+      click: () => window.open("/pricing", "_blank"),
     },
     {
       title: "Company",
@@ -79,13 +80,13 @@ export function useNavbarUrls(): URLType[] {
       subItems: [
         {
           title: "About Rever",
-          click: () => window.open("/", "_blank"),
-          content: "At Rever, we believe finance should be intelligent, empowering, and intuitive",
+          click: () => window.open("/about", "_blank"),
+          content: "Powering intelligent finance with automation, control, and insights.",
         },
         {
           title: "Careers",
-          click: () => window.open("/", "_blank"),
-          content: "Organizes documents for audits, provides intelligent insights across periods",
+          click: () => window.open("/careers", "_blank"),
+          content: "Join us in reshaping the future of finance  one intelligent workflow at a time.",
         },
       ]
     },
@@ -96,7 +97,12 @@ export function useNavbarUrls(): URLType[] {
         {
           title: "Blogs & Guides",
           click: () => window.open("/blog", "_blank"),
-          content: "Learn, Explore, Stay Informed",
+          content: "Insights on finance, automation, and building smarter back offices.",
+        },
+        {
+          title: "Roadmap",
+          click: () => window.open("/roadmap", "_blank"),
+          content: "See what’s next  from AI-driven controls to finance copilots.",
         }
       ]
     },
@@ -106,18 +112,18 @@ export function useNavbarUrls(): URLType[] {
       subItems: [
         {
           title: "Contact sales",
-          click: () => window.open("/", "_blank"),
-          content: "Learn, Explore, Stay Informed",
+          click: () => window.open("/contact-sales", "_blank"),
+          content: "Contact us to discover how Rever can transform your financial operations.",
         },
-        {
-          title: "Support",
-          click: () => window.open("/", "_blank"),
-          content: "Learn, Explore, Stay Informed",
-        },
+        // {
+        //   title: "Support",
+        //   click: () => window.open("/", "_blank"),
+        //   content: "Learn, Explore, Stay Informed",
+        // },
         {
           title: "Sign up",
           click: () => window.open("https://app.reverfin.ai/", "_blank"),
-          content: "Learn, Explore, Stay Informed",
+          content: "Get started with smarter finance  no clutter, just clarity.",
         }
       ]
     }

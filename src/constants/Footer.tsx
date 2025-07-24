@@ -16,7 +16,7 @@ export const FooterData: FooterDataType = {
     Resources: [
         // { title: "Help Center", link: "/help-center" },
         { title: "Blog & Guides", link: "/blog" },
-        // { title: "Webinars", link: "/webinars" },
+        { title: "Roadmap", link: "/roadmap" },
         // { title: "Customer Stories", link: "/customer-stories" }
     ],
     Connect: [

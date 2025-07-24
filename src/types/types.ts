@@ -20,6 +20,14 @@ export interface ButtonPropsType {
   icon?: React.ReactNode;
 }
 
+export interface SubmitButtonPropsType {
+  handleSubmit: (e: React.FormEvent) => void;
+  title: string;
+  className?: string;
+  icon?: React.ReactNode;
+  disable: boolean;
+}
+
 export interface ImagePropsType {
   src?: string;
   alt: string;
@@ -39,6 +47,7 @@ export interface SubItems {
 export interface URLType {
   title: string;
   icon?: React.ReactNode;
+  click?: () => void;
   subItems?: SubItems[];
 }
 
@@ -140,4 +149,17 @@ export interface BlogsPageDataType {
   date: string;
   read_time: string;
   img: string;
+}
+
+export interface TypewriteType {
+  text: string;
+  speed?: number;
+  classname?: string;
+}
+
+export interface BottomCardType {
+  heading: string;
+  content: string;
+  address?: string;
+  subHeading?: string;
 }

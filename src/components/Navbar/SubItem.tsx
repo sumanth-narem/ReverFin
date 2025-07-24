@@ -9,13 +9,13 @@ const SubItemCard = (subItem: SubItems) => {
   return (
     <div
       onClick={subItem?.click}
-      className="w-1/4 h-full flex items-start group/card justify-start flex-col gap-5 cursor-pointer"
+      className="w-1/4 h-full flex items-start group/card justify-start flex-col cursor-pointer"
     >
       {
         subItem?.img &&
         <>
-          <div className="flex items-start justify-start px-10 flex-col">
-            <div className="relative h-32 w-40 flex items-start justify-start overflow-hidden">
+          <div className="flex items-start justify-start px-5 flex-col">
+            <div className="relative h-40 w-48 flex items-start justify-start overflow-hidden">
               <ImageComponent
                 fill
                 loading="lazy"
@@ -37,7 +37,7 @@ const SubItemCard = (subItem: SubItems) => {
         </>
       }
 
-      <div className="px-10 flex items-start justify-start gap-3 flex-col">
+      <div className={`px-5 ${subItem?.img ? "pt-5" : " pt-10"} flex items-start justify-start gap-3 flex-col`}>
         <p className={`font-alliance ${subItem?.img ? "text-xl" : "text-sm"} text-primary-400 group-hover/card:text-white transition-all duration-500`}>
           {subItem?.title}
         </p>

@@ -10,7 +10,7 @@ export default function NavBar() {
   const NavbarUrls = useNavbarUrls();
   return (
     <>
-      <nav data-aos="fade-up" className="py-5 px-16 h-16 border-b border-primary-500 flex items-center justify-center flex-row fixed top-0 left-0 z-10 w-screen bg-primary-800">
+      <nav className="py-5 px-16 h-16 border-b border-primary-500 flex items-center justify-center flex-row fixed top-0 left-0 z-10 w-screen bg-primary-800">
         <div className="max-w-[100rem] w-full flex items-center justify-between flex-row">
           <div className="flex items-center justify-center flex-row gap-12">
             <Link href="/" target="_blank">
@@ -31,11 +31,11 @@ export default function NavBar() {
                       <div className="group-hover:rotate-180 transition-all duration-500">
                         {item?.icon && item?.icon}
                       </div>
-                      <div className="flex max-w-[100rem] items-center justify-center relative w-full">
+                      <div className="flex items-center justify-center w-full">
                         {
-                          item?.icon &&  //group-hover:min-h-96 min-h-0 h-0
-                          <div className={`w-full fixed left-0 top-16 ${key === 0 ? "group-hover:min-h-80" : "group-hover:min-h-60"} min-h-0 h-0 px-12 flex items-center justify-center flex-col overflow-hidden transition-all duration-500 bg-primary-800 border-b border-primary-500`}>
-                            <div className="flex items-center justify-center flex-row w-full">
+                          //group-hover:min-h-96 min-h-0 h-0
+                          <div className={`w-full fixed left-0 top-16 ${key === 0 ? "group-hover:min-h-80" : "group-hover:min-h-52"} min-h-0 h-0 px-5 flex items-center justify-start flex-col overflow-hidden transition-all duration-500 bg-primary-800 border-b border-primary-500`}>
+                            <div className="flex items-start justify-center flex-row w-full max-w-[100rem]">
                               {
                                 item?.subItems?.map((subItem, key) => (
                                   <SubItemCard
