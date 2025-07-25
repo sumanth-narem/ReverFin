@@ -2,51 +2,27 @@ import { IntegrationsType } from "@/types/types";
 
 export const Integrations: IntegrationsType[] = [
   {
-    name: "Hubspot",
-    img: "/assets/Integrations/Hubspot.svg",
+    name: "Quickbooks",
+    img: "/assets/Integrations/Quickbooks.svg",
     category: "Accounting",
-    content: "Hubspot integration helps sync customer data and automate workflows between your CRM and accounting platforms."
+    content: "Seamlessly sync transactions, invoices, and journal entries between Rever and QuickBooks to ensure accurate books, real-time visibility, and zero duplication."
   },
   {
-    name: "Workday",
-    img: "/assets/Integrations/Workday.svg",
+    name: "Sage",
+    img: "/assets/Integrations/Sage.svg",
     category: "Coming Soon",
-    content: "Workday integration allows seamless HR and financial data synchronization for better workforce and spend management."
+    content: ""
   },
   {
-    name: "Ramp",
-    img: "/assets/Integrations/Ramp.svg",
+    name: "Xero",
+    img: "/assets/Integrations/Xero.svg",
     category: "Coming Soon",
-    content: "Ramp integration lets you automatically track, control, and reconcile business expenses and corporate card transactions."
+    content: ""
   },
   {
-    name: "Bank of America",
-    img: "/assets/Integrations/BOA.svg",
+    name: "Dynamics",
+    img: "/assets/Integrations/Dynamics.svg",
     category: "Coming Soon",
-    content: "Connect Bank of America to view real-time transactions, automate reconciliations, and enhance banking workflows."
+    content: ""
   },
-  // {
-  //   name: "Logoipsum1",
-  //   img: "/assets/Integrations/Logoipsum1.svg",
-  //   category: "Accounting",
-  //   content: "This integration enables easy invoice syncing, ledger updates, and real-time financial tracking with your tools."
-  // },
-  // {
-  //   name: "Wells Fargo",
-  //   img: "/assets/Integrations/Wellsfargo.svg",
-  //   category: "Accounting",
-  //   content: "Integrate with Wells Fargo to streamline bank feeds, transaction imports, and financial data syncing."
-  // },
-  // {
-  //   name: "Logoipsum2",
-  //   img: "/assets/Integrations/Logoipsum2.svg",
-  //   category: "Accounting",
-  //   content: "Automatically connect financial records, payments, and compliance data across your accounting systems."
-  // },
-  // {
-  //   name: "Logoipsum3",
-  //   img: "/assets/Integrations/Logoipsum3.svg",
-  //   category: "Accounting",
-  //   content: "Ensure secure and efficient data sharing between your financial tools and general ledger via this integration."
-  // },
 ];

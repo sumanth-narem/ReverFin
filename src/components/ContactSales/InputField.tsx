@@ -19,8 +19,8 @@ const InputField: React.FC<InputFieldProps> = ({
 }) => {
   return (
     <div className="w-full">
-      <label className="block text-sm font-medium mb-1 text-black" htmlFor={id}>
-        {label}
+      <label className="block text-sm font-medium mb-1 text-slate-700" htmlFor={id}>
+        {label}<span className="text-red-500"> *</span>
       </label>
       <input
         id={id}
@@ -29,7 +29,7 @@ const InputField: React.FC<InputFieldProps> = ({
         value={value}
         required
         onChange={onChange}
-        className="w-full border border-black text-black font-ppMori rounded-md px-4 py-2 outline-none"
+        className="w-full border border-black text-black font-ppMori rounded-md px-4 pb-2 pt-3 outline-none appearance-none [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
       />
     </div>
   );

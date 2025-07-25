@@ -15,7 +15,7 @@ function Header() {
               </div>
               <div className='flex items-start justify-start flex-row gap-4'>
                 <Button
-                  link='https://app.reverfin.ai/'
+                  link='/contact-sales'
                   title='Contact sales'
                   icon={<ArrowRight width={14} className='-mt-0.5' />}
                   className='bg-secondary flex items-center justify-center px-5 pt-0.5 h-[2.5rem] rounded-full text-primary-800 gap-8'
@@ -23,7 +23,6 @@ function Header() {
                 <Button
                   link='https://app.reverfin.ai/'
                   title='Sign up'
-                  // icon={<ArrowRight width={16} className='-mt-0.5'/>}
                   icon={<ArrowRight width={14} className='-mt-0.5' />}
                   className='bg-black flex items-center justify-center px-5 pt-0.5 h-[2.5rem] rounded-full text-white gap-8'
                 />

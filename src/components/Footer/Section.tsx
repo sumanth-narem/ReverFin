@@ -3,10 +3,10 @@
 import React, { useEffect, useState } from 'react'
 import ImageComponent from '../ui/Image';
 import Link from 'next/link';
-import { FooterData } from '@/constants/Footer';
+import { useFooterLinks } from '@/constants/Footer';
 
 function Header() {
-
+  const FooterData = useFooterLinks();
   const [year, setYear] = useState<number | null>(null);
 
   useEffect(() => {
@@ -25,11 +25,11 @@ function Header() {
                 <div key={section}>
                   <h3 className="mb-4 font-ppMori text-xl">{section}</h3>
                   <ul className="space-y-2">
-                    {links.map(({ title, link }) => (
+                    {links.map(({ title, click }) => (
                       <li key={title}>
-                        <Link href={link} target='_blank' className="hover:underline font-ppMori text-sm text-gray-400 duration-300 transition-all">
+                        <div onClick={click} className="hover:underline font-ppMori text-sm text-gray-400 duration-300 transition-all cursor-pointer">
                           {title}
-                        </Link>
+                        </div>
                       </li>
                     ))}
                   </ul>

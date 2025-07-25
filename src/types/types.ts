@@ -131,15 +131,19 @@ export interface BlogsDataType {
   img: string;
 }
 
-export type FooterLinkItem = {
-  title: string;
-  link: string;
-};
-
 export type FooterSectionKey = 'Product' | 'Company' | 'Resources' | 'Connect';
 
+export type FooterLinkItem = {
+  title: string;
+  // link: string;
+  click?: () => void;
+};
+
 export type FooterDataType = {
-  [key in FooterSectionKey]: FooterLinkItem[];
+  Product: FooterLinkItem[];
+  Company: FooterLinkItem[];
+  Resources: FooterLinkItem[];
+  Connect: FooterLinkItem[];
 };
 
 export interface BlogsPageDataType {

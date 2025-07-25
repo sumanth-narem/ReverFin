@@ -1,28 +1,78 @@
+'use client';
+
+import { usePathname, useRouter } from "next/navigation";
+import { useMemo } from "react";
 import { FooterDataType } from "@/types/types";
 
-export const FooterData: FooterDataType = {
+export function useFooterLinks(): FooterDataType {
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const openLink = (url: string) => {
+    window.open(url, "_blank");
+  };
+
+  const scrollOrNavigate = (id: string) => {
+    if (typeof window === "undefined") return;
+
+    if (pathname === "/") {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      sessionStorage.setItem("scrollToId", id);
+      router.push("/");
+    }
+  };
+
+  const footerLinks: FooterDataType = useMemo(() => ({
     Product: [
-        { title: "Features & Integrations", link: "/features-integrations" },
-        { title: "Pricing & Plans", link: "/pricing" },
-        // { title: "API Documentation", link: "/api-docs" },
-        { title: "Product Roadmap", link: "/product-roadmap" }
+      {
+        title: "Features & Integrations",
+        // link: "/features-integrations",
+        click: () => scrollOrNavigate("Mesh"),
+      },
+      {
+        title: "Pricing & Plans",
+        // link: "/pricing",
+        click: () => openLink("/pricing"),
+      },
     ],
     Company: [
-        { title: "About Rever", link: "/about" },
-        // { title: "Our Team", link: "/team" },
-        { title: "Careers", link: "/careers" },
-        // { title: "Press Kit", link: "/press-kit" }
+      {
+        title: "About Rever",
+        // link: "/about",
+        click: () => openLink("/about"),
+      },
+      {
+        title: "Careers",
+        // link: "/careers",
+        click: () => openLink("/careers"),
+      },
     ],
     Resources: [
-        // { title: "Help Center", link: "/help-center" },
-        { title: "Blog & Guides", link: "/blog" },
-        { title: "Roadmap", link: "/roadmap" },
-        // { title: "Customer Stories", link: "/customer-stories" }
+      {
+        title: "Blog & Guides",
+        // link: "/blog",
+        click: () => openLink("/blog"),
+      },
+      {
+        title: "Roadmap",
+        // link: "/roadmap",
+        click: () => scrollOrNavigate("roadmap"),
+      },
     ],
     Connect: [
-        { title: "Contact Sales", link: "/contact-sales" },
-        // { title: "Support", link: "/support" },
-        // { title: "Newsletter", link: "/newsletter" },
-        { title: "Signup", link: "https://app.reverfin.ai" }
-    ]
-};
+      {
+        title: "Contact Sales",
+        // link: "/contact-sales",
+        click: () => openLink("/contact-sales"),
+      },
+      {
+        title: "Signup",
+        // link: "https://app.reverfin.ai",
+        click: () => openLink("https://app.reverfin.ai"),
+      },
+    ],
+  }), [router]);
+
+  return footerLinks;
+}

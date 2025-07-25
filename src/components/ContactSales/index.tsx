@@ -14,7 +14,7 @@ function ContactSales() {
             <p className='text-3xl font-alliance'>Contact sales</p>
             <div className='flex items-start justify-start flex-col gap-7'>
               <p className='text-3xl font-alliance'>Have questions, suggestions, or need support? We&apos;re here to help.</p>
-              <p>Reach us anytime by email, phone, or simply fill out the form, and our team will get back to you promptly.</p>
+              <p className='font-ppMori'>Reach us anytime by email, phone, or simply fill out the form, and our team will get back to you promptly.</p>
             </div>
             <div>
               <p className='font-ppMori text-base'>General Enquiries</p>

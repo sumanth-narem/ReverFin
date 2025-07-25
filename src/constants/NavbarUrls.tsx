@@ -101,7 +101,7 @@ export function useNavbarUrls(): URLType[] {
         },
         {
           title: "Roadmap",
-          click: () => window.open("/roadmap", "_blank"),
+          click: () => scrollOrNavigate("roadmap"),
           content: "See what’s next  from AI-driven controls to finance copilots.",
         }
       ]

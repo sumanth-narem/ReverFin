@@ -65,7 +65,7 @@ const ContactForm: React.FC = () => {
       />
       <InputField
         id="phone"
-        type="tel"
+        type="number"
         label="Phone number"
         placeholder="Enter your phone number"
         value={formData.phone}
@@ -105,8 +105,8 @@ const ContactForm: React.FC = () => {
           className={`bg-black flex items-center justify-center px-3 sm:px-5 pt-0.5 h-[2rem] sm:h-[2.5rem] rounded-full text-white gap-8 ${!formData?.consent && "cursor-not-allowed"}`}
         />
         <Button
-          link="/"
-          title="Get a demo"
+          link="https://cal.com/rever-sales/talk-to-us"
+          title="Book a demo"
           icon={<ArrowRight width={14} className="-mt-0.5" />}
           className="bg-secondary flex items-center justify-center px-3 sm:px-5 pt-0.5 h-[2rem] sm:h-[2.5rem] rounded-full text-primary-800 gap-8 text-[12px]"
         />

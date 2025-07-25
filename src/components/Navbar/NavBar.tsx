@@ -33,7 +33,7 @@ export default function NavBar() {
                       </div>
                       <div className="flex items-center justify-center w-full">
                         {
-                          //group-hover:min-h-96 min-h-0 h-0
+                          item?.icon &&//group-hover:min-h-96 min-h-0 h-0
                           <div className={`w-full fixed left-0 top-16 ${key === 0 ? "group-hover:min-h-80" : "group-hover:min-h-52"} min-h-0 h-0 px-5 flex items-center justify-start flex-col overflow-hidden transition-all duration-500 bg-primary-800 border-b border-primary-500`}>
                             <div className="flex items-start justify-center flex-row w-full max-w-[100rem]">
                               {

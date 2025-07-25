@@ -15,18 +15,18 @@ function Header() {
               </div>
               <div data-aos="fade-up" data-aos-delay="800" className='flex items-center justify-center gap-4 md:gap-7'>
                 <Button
-                  link='https://preview.reverfin.ai/'
-                  title='Get a demo'
+                  link='https://cal.com/rever-sales/talk-to-us'
+                  title='Book a demo'
                   icon={<ArrowRight width={14} className='-mt-0.5' />}
                   className='bg-secondary flex items-center justify-center px-3 sm:px-5 pt-0.5 h-[2rem] sm:h-[2.5rem] rounded-full text-primary-800 gap-8 text-[12px]'
                 />
-                <Button
+                {/* <Button
                   link='https://preview.reverfin.ai/'
                   title='Watch demo'
                   // icon={<ArrowRight width={16} className='-mt-0.5'/>}
                   icon={<Play width={12} className='-mt-0.5' />}
                   className='bg-black flex items-center justify-center px-3 sm:px-5 pt-0.5 h-[2rem] sm:h-[2.5rem] rounded-full text-white gap-8'
-                />
+                /> */}
               </div>
             </div>
           </div>

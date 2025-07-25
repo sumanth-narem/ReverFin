@@ -93,9 +93,9 @@ function Header() {
                   </p>
                   <div data-aos="fade-up" data-aos-delay="600">
                     <Button
-                      title='Get a demo'
+                      title='Book a demo'
                       icon={<ArrowRight width={14} />}
-                      link='#'
+                      link='https://cal.com/rever-sales/talk-to-us'
                       className='bg-primary-800 text-white px-5 pt-0.5 h-[2.5rem] rounded-full flex items-center justify-center'
                     />
                   </div>

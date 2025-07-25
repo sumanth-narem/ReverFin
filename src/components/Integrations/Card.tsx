@@ -11,7 +11,7 @@ function Card({ item, keyValue }: IntegrationsCardType) {
       className="group relative w-full aspect-square perspective"
     >
       <div
-        className="relative w-full h-full transition-transform duration-700 transform-style preserve-3d group-hover:rotate-y-180"
+        className={`relative w-full h-full transition-transform duration-700 transform-style ${item?.category !== "Coming Soon" ? "preserve-3d group-hover:rotate-y-180" : "opacity-50"}`}
       >
         {/* Front Side */}
         <div className="absolute inset-0 backface-hidden w-full h-full flex flex-col items-center justify-center border border-primary-50 rounded-3xl">
