@@ -8,35 +8,6 @@ function TimeLine() {
   const [scrollValue, setScrollValue] = useState<number>(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (containerRef.current) {
-  //       const rect = containerRef.current.getBoundingClientRect();
-  //       const offset = window.innerHeight - rect.top; // or use rect.top for distance from top
-  //       setScrollValue(offset);
-  //       if (scrollValue > 700 && scrollValue < 1400) {
-  //         setActiveTab(1);
-  //       }
-  //       else if (scrollValue > 1400 && scrollValue < 2100) {
-  //         setActiveTab(2);
-  //       }
-  //       else if (scrollValue > 2100) {
-  //         setActiveTab(3);
-  //       }
-  //       else {
-  //         setActiveTab(0);
-  //       }
-  //     }
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-  //   handleScroll(); // trigger initially
-
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, [scrollValue]);
-
   useEffect(() => {
     const handleScroll = () => {
       if (containerRef.current) {
@@ -77,7 +48,7 @@ function TimeLine() {
   return (
     <>
       <div ref={containerRef} className='pt-20 h-[2700px]'>
-        <div className='sticky top-40 2xl:top-48 flex items-start justify-center flex-row w-full'>
+        <div className='sticky top-28 flex items-start justify-center flex-row w-full'>
           {
             TimeLineData?.map((time, key) => (
               <div key={key} className='w-full'>
@@ -96,15 +67,15 @@ function TimeLine() {
                   </div>
                   {/* {
                     activeTab === key && */}
-                  <div className={`w-full flex items-start justify-start flex-col gap-5 pr-5 mt-16 overflow-hidden ${activeTab === key ? "opacity-100" : "opacity-30"} duration-500 transition-all ease-in-out`}>
-                    <p className='font-ppMori text-lg'>{time?.content?.heading}</p>
+                  <div className={`w-full flex items-start justify-start flex-col gap-5 pr-8 mt-10 overflow-hidden ${activeTab === key ? "opacity-100" : "opacity-30"} duration-500 transition-all ease-in-out`}>
+                    <p className='font-ppMori text-lg -mb-2'>{time?.content?.heading}</p>
                     <ul className='flex items-start justify-start flex-col w-full gap-3'>
                       {time?.content?.items?.map((item, subKey) => (
                         <li key={subKey} className='text-primary-400 font-ppMori flex items-start justify-start flex-row gap-1'>
                           <div className="text-primary-100 text-xl -mt-1">
                             •
                           </div>
-                          <p className='text-sm'>{item}</p>
+                          <div className='text-sm flex items-start flex-col'>{item}</div>
                         </li>
                       ))}
                     </ul>

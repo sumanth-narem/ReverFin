@@ -4,7 +4,9 @@ import Header from './Section'
 function GettingStarted() {
   return (
     <>
-      <Header />
+      <div className='px-12'>
+        <Header />
+      </div>
     </>
   )
 }

@@ -1,5 +1,6 @@
 'use client';
 
+import { Link } from 'lucide-react';
 // import { useRouter } from 'next/navigation';
 import ImageComponent from '../ui/Image';
 import { SubItems } from '@/types/types';
@@ -38,8 +39,9 @@ const SubItemCard = (subItem: SubItems) => {
       }
 
       <div className={`px-5 ${subItem?.img ? "pt-5" : " pt-10"} flex items-start justify-start gap-3 flex-col`}>
-        <p className={`font-alliance ${subItem?.img ? "text-xl" : "text-sm"} text-white group-hover/card:underline transition-all duration-500`}>
+        <p className={`font-alliance ${subItem?.img ? "text-xl" : "text-sm"} text-white group-hover/card: transition-all duration-500 flex items-center justify-start flex-row gap-2`}>
           {subItem?.title}
+          {/* <Link width={10} className='text-primary-400' /> */}
         </p>
         <p className={`font-ppMori ${subItem?.img ? "text-sm" : "text-xl"} text-primary-400 group-hover/card:text-white transition-all duration-500`}>
           {subItem?.content}

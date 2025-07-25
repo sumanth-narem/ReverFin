@@ -20,7 +20,7 @@ function Card({ item, keyValue }: IntegrationsCardType) {
             fill
             loading="lazy"
             src={item?.img}
-            className="h-12 w-28 lg:h-16 lg:w-32 relative"
+            className="h-24 aspect-square relative"
           />
           {
             item?.category &&

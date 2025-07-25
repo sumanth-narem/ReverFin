@@ -32,7 +32,7 @@ export const SideCard = ({ content, features, percent }: SideCardType) => {
       <div data-aos="fade-right" data-aos-delay="1000" className='text-primary-800 text-lg flex items-start justify-start flex-col gap-3'>
         {
           features?.map((item, key) => (
-            <div key={key} className='flex items-start justify-start flex-col pt-3 border-t border-primary-50 w-full'>
+            <div key={key} className={`flex items-start justify-start flex-col pt-3 border-t ${featureToShowIndex === key ? "border-primary-800" : "border-primary-50"} duration-300 transition-all w-full`}>
               <div className='flex items-center justify-center gap-3'>
                 <ImageComponent
                   src={item?.icon}
