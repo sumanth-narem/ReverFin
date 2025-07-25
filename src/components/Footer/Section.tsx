@@ -27,7 +27,7 @@ function Header() {
                   <ul className="space-y-2">
                     {links.map(({ title, click }) => (
                       <li key={title}>
-                        <div onClick={click} className="hover:underline font-ppMori text-sm text-gray-400 duration-300 transition-all cursor-pointer">
+                        <div onClick={click} className="hover:underline w-max font-ppMori text-sm text-gray-400 duration-300 transition-all cursor-pointer">
                           {title}
                         </div>
                       </li>

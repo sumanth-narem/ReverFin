@@ -26,7 +26,9 @@ export default function NavBar() {
               {
                 NavbarUrls?.map((item, key) => {
                   return (
-                    <li key={key} className={`py-2 px-2 group flex items-center justify-center gap-1 text-sm ${!item?.icon ? "cursor-pointer" : "cursor-default"}`}>
+                    <li key={key} className={`py-2 px-2 group flex items-center justify-center gap-1 text-sm ${!item?.icon ? "cursor-pointer" : "cursor-default"}`}
+                      onClick={!item?.icon ? item?.click : undefined}
+                    >
                       {item?.title}
                       <div className="group-hover:rotate-180 transition-all duration-500">
                         {item?.icon && item?.icon}

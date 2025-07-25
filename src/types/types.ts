@@ -167,3 +167,16 @@ export interface BottomCardType {
   address?: string;
   subHeading?: string;
 }
+
+export interface PlanFeature {
+  name: string;
+  content: string[];
+}
+
+export interface Plan {
+  name: string;
+  amount: string;
+  price: string;
+  description: string;
+  features: PlanFeature[];
+}
