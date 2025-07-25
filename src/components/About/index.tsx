@@ -3,7 +3,6 @@
 import React from 'react'
 import ImageComponent from '../ui/Image'
 import { AboutContent } from '@/constants/About'
-import Typewriter from '../ui/Typewriter'
 
 function About() {
   return (

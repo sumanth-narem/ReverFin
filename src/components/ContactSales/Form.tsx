@@ -88,7 +88,7 @@ const ContactForm: React.FC = () => {
           className="mt-1"
         />
         <label htmlFor="consent" className="text-[14px] font-ppMori text-gray-600">
-          I've read the{" "}
+          I&apos;ve read the{" "}
           <a href="/legal/privacy-policy" target="_blank" className="text-gray-800 underline">
             Privacy Policy
           </a>{" "}

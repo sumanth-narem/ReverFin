@@ -1,6 +1,6 @@
 'use client'
 
-import React, { act, useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Hidden from './Hidden'
 import Button from '../ui/Button'
 import { ArrowRight } from 'lucide-react'

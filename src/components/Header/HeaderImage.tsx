@@ -1,6 +1,6 @@
 import React from 'react'
 import ImageComponent from '../ui/Image'
-import MarqueeComponent from './MarqueeComponent'
+// import MarqueeComponent from './MarqueeComponent'
 
 function HeaderImage() {
   return (
@@ -18,9 +18,9 @@ function HeaderImage() {
               />
             </div>
           </div>
-          <div className='h-32 border border-primary-500 border-b-0 flex items-center justify-center text-primary-100 text-lg px-3'>
+          {/* <div className='h-32 border border-primary-500 border-b-0 flex items-center justify-center text-primary-100 text-lg px-3'>
             <p data-aos="fade-up" className='text-center text-sm'>Trusted by growing businesses and finance teams worldwide</p>
-          </div>
+          </div> */}
         </div>
         {/* <div className='w-full max-w-[100rem] border-y border-primary-500 px-5 sm:px-8 lg:px-12'>
           <div data-aos="fade" className='border-x border-primary-500'>

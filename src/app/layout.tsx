@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import LenisAOSWrapper from "@/components/Animation/LenisAOSWrapper";
+import LenisAOSWrapper from "@/components/animation/LenisAOSWrapper";
 import "./globals.css";
 import NavBar from "@/components/Navbar/NavBar";
 import Footer from "@/components/Footer";

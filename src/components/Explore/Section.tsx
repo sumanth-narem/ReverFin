@@ -2,7 +2,7 @@ import React from 'react'
 import { BlogsData } from '@/constants/Blogs'
 import ImageComponent from '../ui/Image'
 import Button from '../ui/Button';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 function Section() {
   return (

@@ -3,7 +3,7 @@
 import { TypewriteType } from '@/types/types';
 import { Typewriter as SimpleTypewriter } from 'react-simple-typewriter'
 
-const Typewriter = ({ text, speed = 70, classname }: TypewriteType) => {
+const Typewriter = ({ text, speed = 70 }: TypewriteType) => {
   return (
     <>
       <SimpleTypewriter
