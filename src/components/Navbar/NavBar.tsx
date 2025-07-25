@@ -10,23 +10,23 @@ export default function NavBar() {
   const NavbarUrls = useNavbarUrls();
   return (
     <>
-      <nav className="py-5 px-16 h-16 border-b border-primary-500 flex items-center justify-center flex-row fixed top-0 left-0 z-10 w-screen bg-primary-800">
+      <nav className="py-5 px-12 h-16 border-b border-primary-500 flex items-center justify-center flex-row fixed top-0 left-0 z-10 w-screen bg-primary-800">
         <div className="max-w-[100rem] w-full flex items-center justify-between flex-row">
-          <div className="flex items-center justify-center flex-row gap-12">
+          <div className="flex items-center justify-center flex-row gap-10">
             <Link href="/" target="_blank">
               <ImageComponent
                 src="/assets/LogoWhite.svg"
                 alt="Rever Logo"
                 fill
                 loading="lazy"
-                className="h-10 w-28 left-0 relative"
+                className="h-10 w-24 left-0 relative"
               />
             </Link>
-            <ul className="font-alliance flex flex-row gap-5">
+            <ul className="font-alliance flex flex-row gap-2 xl:gap-4">
               {
                 NavbarUrls?.map((item, key) => {
                   return (
-                    <li key={key} className={`py-2 px-2 group flex items-center justify-center gap-1 text-sm ${!item?.icon ? "cursor-pointer" : "cursor-default"}`}
+                    <li key={key} className={`py-2 px-1 group flex items-center justify-center gap-1 text-sm ${!item?.icon ? "cursor-pointer" : "cursor-default"}`}
                       onClick={!item?.icon ? item?.click : undefined}
                     >
                       {item?.title}
@@ -70,8 +70,18 @@ export default function NavBar() {
             </Link>
             <Button
               link="https://app.reverfin.ai/"
+              title="Log in"
+              className="pt-0.5 h-[2rem] flex items-center justify-center hover:text-secondary transition-all duration-500"
+            />
+            <Button
+              link="https://app.reverfin.ai/"
               title="Sign up"
-              className="border-2 border-secondary px-5 pt-0.5 h-[2.5rem] flex items-center justify-center hover:bg-secondary hover:text-primary-800 transition-all duration-500 rounded-full"
+              className="pt-0.5 h-[2rem] flex items-center justify-center hover:text-secondary transition-all duration-500"
+            />
+            <Button
+              link="https://app.reverfin.ai/"
+              title="Book a demo"
+              className="border-2 border-secondary px-3 pt-0.5 h-[2.5rem] flex items-center justify-center hover:bg-secondary hover:text-primary-800 transition-all duration-500 rounded-full"
             />
           </div>
         </div>

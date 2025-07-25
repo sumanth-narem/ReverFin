@@ -138,7 +138,7 @@ const ContactForm: React.FC = () => {
           <a href="/legal/privacy-policy" target="_blank" className="text-gray-800 underline">
             Privacy Policy
           </a>{" "}
-          and consent to the processing of personal data by Rever.ai
+          and consent to the processing of personal data by reverfin.ai
         </label>
       </div>
 

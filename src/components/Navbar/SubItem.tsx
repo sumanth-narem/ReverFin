@@ -38,7 +38,7 @@ const SubItemCard = (subItem: SubItems) => {
       }
 
       <div className={`px-5 ${subItem?.img ? "pt-5" : " pt-10"} flex items-start justify-start gap-3 flex-col`}>
-        <p className={`font-alliance ${subItem?.img ? "text-xl" : "text-sm"} text-primary-400 group-hover/card:text-white transition-all duration-500`}>
+        <p className={`font-alliance ${subItem?.img ? "text-xl" : "text-sm"} text-white group-hover/card:underline transition-all duration-500`}>
           {subItem?.title}
         </p>
         <p className={`font-ppMori ${subItem?.img ? "text-sm" : "text-xl"} text-primary-400 group-hover/card:text-white transition-all duration-500`}>

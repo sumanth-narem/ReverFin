@@ -47,6 +47,11 @@ export function useFooterLinks(): FooterDataType {
         // link: "/careers",
         click: () => openLink("/careers"),
       },
+      {
+        title: "Manifesto",
+        // link: "/careers",
+        click: () => openLink("/manifesto"),
+      },
     ],
     Resources: [
       {

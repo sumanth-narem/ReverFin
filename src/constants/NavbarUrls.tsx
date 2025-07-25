@@ -88,6 +88,11 @@ export function useNavbarUrls(): URLType[] {
           click: () => window.open("/careers", "_blank"),
           content: "Join us in reshaping the future of finance  one intelligent workflow at a time.",
         },
+        {
+          title: "Manifesto",
+          click: () => window.open("/manifesto", "_blank"),
+          content: "What we believe, why we built Rever, and where we’re headed.",
+        },
       ]
     },
     {
