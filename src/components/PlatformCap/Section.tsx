@@ -12,7 +12,7 @@ function Section() {
               <div className='col-span-1 font-ppMori bg-primary-800 rounded-3xl p-5 h-[23rem] flex flex-col items-center justify-center'>
                 <div>
                   <p className='text-xl'>Smart Transaction Controls</p>
-                  <p className='text-primary-400 mt-3 text-sm'>Multi-way document matching and AI-led validation for informed, rule-based approvals</p>
+                  <p className='text-primary-400 mt-3 text-sm'>Multiway document matching and AI-led validation for informed, rule-based approvals</p>
                 </div>
                 <div className='w-[60%] flex-grow relative min-h-0 mt-10'>
                   <ImageComponent
@@ -59,7 +59,7 @@ function Section() {
               <div className='font-ppMori bg-primary-800 rounded-3xl p-5 basis-1/3 h-[23rem] flex flex-col items-center justify-center'>
                 <div>
                   <p className='text-xl'>Audit-Ready Documentation</p>
-                  <p className='text-primary-400 mt-3 text-sm'>Every document tracked and organized for seamless audit trails and due diligence</p>
+                  <p className='text-primary-400 mt-3 text-sm'>Every document is tracked and organized for seamless audit trails and due diligence</p>
                 </div>
                 <div className='w-[60%] flex-grow relative min-h-0 my-10'>
                   <ImageComponent

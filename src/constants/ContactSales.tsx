@@ -12,7 +12,5 @@ export const bottomCards: BottomCardType[] = [
     {
         heading: "Media & Press Inquiries",
         content: "For media-related questions, press releases, or interview requests, please reach out to us at media@reverfin.ai.",
-        subHeading: "Headquarters",
-        address: "8 THE GREEN STE B, DOVER, Delaware 19901, US"
     }
 ];

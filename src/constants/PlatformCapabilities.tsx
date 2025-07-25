@@ -4,7 +4,7 @@ export const Integrations: IntegrationsType[] = [
   {
     name: "Quickbooks",
     img: "/assets/Integrations/Quickbooks.svg",
-    category: "Accounting",
+    category: "",
     content: "Seamlessly sync transactions, invoices, and journal entries between Rever and QuickBooks to ensure accurate books, real-time visibility, and zero duplication."
   },
   {

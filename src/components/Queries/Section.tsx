@@ -31,14 +31,14 @@ function Header() {
             </div>
           </form>
         </div>
-        <div data-aos="fade" className='flex items-center justify-center mt-12'>
+        {/* <div data-aos="fade" className='flex items-center justify-center mt-12'>
           <Button
             link='https://preview.reverfin.ai/'
             title='Try Live Demo'
             icon={<ArrowRight width={14} className='-mt-0.5' />}
             className='bg-secondary flex items-center justify-center px-5 pt-0.5 h-[2.5rem] w-max rounded-full text-primary-800 gap-8'
           />
-        </div>
+        </div> */}
       </div>
     </>
   )

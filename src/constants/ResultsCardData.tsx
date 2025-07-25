@@ -50,7 +50,7 @@ export const scrollSectionData: ScrollSectionDataType[] = [
       },
       {
         "icon": "/assets/scrollSection/MultiwayMatching.svg",
-        "text": "Multi-way matching",
+        "text": "Multiway matching",
         "content": " Automatically match PO, Invoice, GRN, and more to flag anomalies.",
       },
       {

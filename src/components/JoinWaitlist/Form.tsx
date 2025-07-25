@@ -12,7 +12,7 @@ interface FormData {
   company: string;
   companySize: string;
   consent: boolean;
-  problems: string;
+  comments?: string;
 }
 
 const ContactForm: React.FC = () => {
@@ -23,7 +23,7 @@ const ContactForm: React.FC = () => {
     company: "",
     companySize: "0-5",
     consent: false,
-    problems: "",
+    comments: "",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -43,7 +43,7 @@ const ContactForm: React.FC = () => {
       company: "",
       companySize: "",
       consent: false,
-      problems: "",
+      comments: "",
     });
     console.log("Form Data:", formData);
   };
@@ -111,16 +111,16 @@ const ContactForm: React.FC = () => {
       </div>
       <div className="w-full">
         <label className="block text-sm font-medium mb-1 text-slate-700" htmlFor="text-area">
-          What problem do you want Rever to solve for you?
+          Write your comments
         </label>
         <textarea
           id="comments"
-          placeholder="Enter your problem"
+          placeholder="Enter your comments"
           cols={2}
           className="w-full border border-black text-black font-ppMori rounded-md px-3 pb-1 pt-2 text-sm outline-none"
-          value={formData.problems}
+          value={formData.comments}
           onChange={(e) => {
-            setFormData((prev) => ({ ...prev, problems: e.target.value }))
+            setFormData((prev) => ({ ...prev, comments: e.target.value }))
           }}
         />
       </div>

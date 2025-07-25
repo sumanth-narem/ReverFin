@@ -33,7 +33,7 @@ const InputField: React.FC<InputFieldProps> = ({
         value={value}
         required={required}
         onChange={onChange}
-        className="w-full border border-black text-black font-ppMori rounded-md px-3 pb-1 pt-2 text-sm outline-none appearance-none [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+        className="w-full border border-black text-black font-ppMori rounded-md px-3 pb-1 pt-2 text-sm outline-none appearance-none"
       />
     </div>
   );

@@ -49,7 +49,7 @@ function Section() {
   return (
     <>
       <div ref={containerRef} className='h-[2100px]'>
-        <div className='sticky -top-5 flex items-center justify-center flex-wrap border-r border-primary-300 px-10'>
+        <div className='sticky -top-5 flex items-center justify-center flex-wrap border-r border-primary-500 px-10'>
           <div className='pb-36 pt-32 border-r border-primary-500 flex items-start justify-center flex-col basis-1/2 xl:pl-12'>
             <p className='font-alliance text-4xl'>What You Get - Role by Role</p>
             <div className='w-full pt-7'>

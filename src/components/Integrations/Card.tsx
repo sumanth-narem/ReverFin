@@ -22,9 +22,12 @@ function Card({ item, keyValue }: IntegrationsCardType) {
             src={item?.img}
             className="h-12 w-28 lg:h-16 lg:w-32 relative"
           />
-          <div className='bg-primary-200 text-primary-600 rounded-xl px-3 pt-1 pb-2 absolute bottom-3 right-3 xl:bottom-5 xl:right-5'>
-            <p className='text-[12px] md:text-sm'>{item?.category}</p>
-          </div>
+          {
+            item?.category &&
+            <div className='bg-primary-200 text-primary-600 rounded-xl px-3 pt-1 pb-2 absolute bottom-3 right-3 xl:bottom-5 xl:right-5'>
+              <p className='text-[12px] md:text-sm'>{item?.category}</p>
+            </div>
+          }
         </div>
 
         {/* Back Side */}
