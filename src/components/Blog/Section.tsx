@@ -49,7 +49,7 @@ function Header() {
               </div>
               <div className='flex items-center justify-center flex-row gap-4 pt-12'>
                 <Button
-                  link='https://app.reverfin.ai/'
+                  link='/contact-sales'
                   title='Contact sales'
                   icon={<ArrowRight width={14} className='-mt-0.5' />}
                   className='bg-secondary flex items-center justify-center px-5 pt-0.5 h-[2.5rem] rounded-full text-primary-800 gap-8'
