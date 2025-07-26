@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../ui/Button'
-import { ArrowRight, Play } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 function Header() {
   return (

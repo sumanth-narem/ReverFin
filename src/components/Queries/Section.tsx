@@ -1,7 +1,7 @@
 import React from 'react'
 import ImageComponent from '../ui/Image'
 import { ArrowRight } from 'lucide-react'
-import Button from '../ui/Button'
+// import Button from '../ui/Button'
 
 function Header() {
   return (

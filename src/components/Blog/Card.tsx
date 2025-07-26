@@ -1,11 +1,12 @@
 import React from 'react'
 import ImageComponent from '../ui/Image'
 import { BlogsPageDataType } from '@/types/types'
+import Link from 'next/link'
 
 function Card(item: BlogsPageDataType) {
   return (
     <>
-      <div className='border border-primary-500 rounded-3xl p-4 group hover:bg-primary-500 hover:border-secondary transition-all duration-500 cursor-pointer'>
+      <Link target='_blank' href={item?.link} className='border border-primary-500 rounded-3xl p-4 group hover:bg-primary-500 hover:border-secondary transition-all duration-500 cursor-pointer'>
         <div className='w-full aspect-square rounded-2xl overflow-hidden'>
           <ImageComponent
             src={item?.img}
@@ -23,7 +24,7 @@ function Card(item: BlogsPageDataType) {
           <p className='font-ppMori text-[12px] text-primary-400'>{item.summary}</p>
           <p className='font-ppMori text-[10px] text-primary-400'>{item?.date} | {item?.read_time}</p>
         </div>
-      </div>
+      </Link>
     </>
   )
 }

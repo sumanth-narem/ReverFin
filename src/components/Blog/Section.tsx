@@ -4,6 +4,7 @@ import ImageComponent from '../ui/Image'
 import Card from './Card'
 import Button from '../ui/Button'
 import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 function Header() {
   return (
@@ -15,7 +16,7 @@ function Header() {
               <p className='font-alliance text-4xl'>The Rever blogs</p>
             </div>
             <div className='mt-12'>
-              <div className='grid grid-cols-3 group cursor-pointer'>
+              <Link target='_blank' href={"/blog/enterprise-guide-to-three-way-matching"} className='grid grid-cols-3 group cursor-pointer'>
                 <div className='aspect-square p-4 rounded-3xl border border-primary-500 col-span-1 group-hover:bg-primary-500 group-hover:border-secondary duration-500 transition-all'>
                   <div className='h-full overflow-hidden rounded-3xl'>
                     <ImageComponent
@@ -37,7 +38,7 @@ function Header() {
                     <p className='font-ppMori text-[12px] text-primary-400'>{BlogsData[0]?.date} | {BlogsData[0]?.read_time}</p>
                   </div>
                 </div>
-              </div>
+              </Link>
               <div className='grid grid-cols-3'>
                 {
                   BlogsData?.map((item, key) =>

@@ -153,6 +153,7 @@ export interface BlogsPageDataType {
   date: string;
   read_time: string;
   img: string;
+  link: string;
 }
 
 export interface TypewriteType {
@@ -186,4 +187,34 @@ export interface Plan {
 export interface GradientColorsType {
   start: string;
   end: string;
+}
+
+export interface IndividualBlogType {
+  name: string;
+  title: string;
+  img: string;
+  category: string;
+  date: string;
+  sideContent: SideContentItem[];
+  mainContent: ContentBlock[];
+}
+
+export interface SideContentItem {
+  title: string;
+  targetId: string;
+  onClick?: () => void;
+}
+
+export interface ContentBlock {
+  id?: string;
+  heading: string;
+  body: ContentSection[];
+}
+
+export interface ContentSection {
+  subHeading: string;
+  listType: "numbers" | "bullets" | "" | string;
+  body: string | React.ReactNode;
+  content: (string | React.ReactNode)[];
+  footer?: (string | React.ReactNode)[];
 }

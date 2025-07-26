@@ -1,6 +1,5 @@
 'use client';
 
-import { Link } from 'lucide-react';
 // import { useRouter } from 'next/navigation';
 import ImageComponent from '../ui/Image';
 import { SubItems } from '@/types/types';
