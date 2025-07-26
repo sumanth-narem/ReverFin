@@ -61,9 +61,9 @@ function Header() {
 
   return (
     <>
-      <div ref={containerRef} className='h-[1700px]'>
+      <div ref={containerRef} className='h-[1700px]  px-10'>
         <div className='sticky top-0 flex items-center justify-center flex-col w-full '>
-          <div className='border-t border-primary-50 w-full max-w-[100rem] bg-primary-100'>
+          <div className='w-full max-w-[100rem] bg-primary-100'>
             <div className='py-20 h-full w-full flex items-start justify-center flex-row overflow-hidden'>
               <div className='basis-1/2 px-10 overflow-y-auto'>
                 {steps.map((step, index) => (
@@ -88,8 +88,7 @@ function Header() {
                 <div className='flex items-start justify-start flex-col gap-6'>
                   <p data-aos="fade-up" data-aos-delay="200" className='font-alliance text-4xl'>Getting Started Is Simple</p>
                   <p data-aos="fade-up" data-aos-delay="400" className='font-ppMori text-primary-600'>
-                    How it works text non consequatur hic dolor est unde reiciendis
-                    laboriosam cum. Sunt at repellendus reiciendis possimus.
+                    From chaos to clarity, it only takes a few clicks to get started.
                   </p>
                   <div data-aos="fade-up" data-aos-delay="600">
                     <Button

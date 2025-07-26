@@ -79,7 +79,7 @@ export default function NavBar() {
               className="pt-0.5 h-[2rem] flex items-center justify-center hover:text-secondary transition-all duration-500"
             />
             <Button
-              link="https://app.reverfin.ai/"
+              link="https://cal.com/rever-sales/talk-to-us"
               title="Book a demo"
               className="border-2 border-secondary px-3 pt-0.5 h-[2.5rem] flex items-center justify-center hover:bg-secondary hover:text-primary-800 transition-all duration-500 rounded-full"
             />

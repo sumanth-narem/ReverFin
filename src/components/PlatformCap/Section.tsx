@@ -7,9 +7,9 @@ function Section() {
       <div className='flex items-center justify-center flex-col border-t border-primary-500 py-14 px-12'>
         <p data-aos="fade-up" className='font-alliance text-5xl py-14'>All-in-One Platform Capabilities</p>
         <div className='px-10'>
-          <div data-aos="fade-up" className='bg-primary-500 h-fit w-full p-[1.5px] gap-[1.5px] rounded-3xl grid grid-rows-3'>
-            <div className='grid grid-cols-3 gap-[1.5px] w-full'>
-              <div className='col-span-1 font-ppMori bg-primary-800 rounded-3xl p-5 h-[23rem] flex flex-col items-center justify-center'>
+          <div data-aos="fade-up" className='bg-primary-500 h-fit w-full rounded-3xl grid grid-rows-3 border-primary-500 border'>
+            <div className='grid grid-cols-3 w-full'>
+              <div className='col-span-1 font-ppMori bg-primary-800 rounded-3xl p-5 border border-primary-500 h-[23rem] flex flex-col items-center justify-center'>
                 <div>
                   <p className='text-xl'>Smart Transaction Controls</p>
                   <p className='text-primary-400 mt-3 text-sm'>Multiway document matching and AI-led validation for informed, rule-based approvals</p>
@@ -24,7 +24,7 @@ function Section() {
                   />
                 </div>
               </div>
-              <div className='col-span-2 font-ppMori bg-primary-800 rounded-3xl p-5 h-[23rem] flex flex-col items-center justify-center'>
+              <div className='col-span-2 font-ppMori bg-primary-800 rounded-3xl p-5 border border-primary-500 h-[23rem] flex flex-col items-center justify-center'>
                 <div className='w-full'>
                   <p className='text-xl'>AI Document Automation</p>
                   <p className='text-primary-400 mt-3 text-sm'>Semantic AI reads, tags, verifies, and extracts insights from financial documents automatically</p>
@@ -40,8 +40,8 @@ function Section() {
                 </div>
               </div>
             </div>
-            <div className='grid grid-cols-3 gap-[1.5px] w-full'>
-              <div className='font-ppMori bg-primary-800 rounded-3xl p-5 basis-1/3 h-[23rem] flex flex-col items-center justify-center'>
+            <div className='grid grid-cols-3 w-full'>
+              <div className='font-ppMori bg-primary-800 rounded-3xl p-5 border border-primary-500 basis-1/3 h-[23rem] flex flex-col items-center justify-center'>
                 <div>
                   <p className='text-xl'>One-Click Approvals</p>
                   <p className='text-primary-400 mt-3 text-sm'>Simplified workflows with automated approval collation based on delegation matrices</p>
@@ -56,7 +56,7 @@ function Section() {
                   />
                 </div>
               </div>
-              <div className='font-ppMori bg-primary-800 rounded-3xl p-5 basis-1/3 h-[23rem] flex flex-col items-center justify-center'>
+              <div className='font-ppMori bg-primary-800 rounded-3xl p-5 border border-primary-500 basis-1/3 h-[23rem] flex flex-col items-center justify-center'>
                 <div>
                   <p className='text-xl'>Audit-Ready Documentation</p>
                   <p className='text-primary-400 mt-3 text-sm'>Every document is tracked and organized for seamless audit trails and due diligence</p>
@@ -71,7 +71,7 @@ function Section() {
                   />
                 </div>
               </div>
-              <div className='font-ppMori bg-primary-800 rounded-3xl p-5 basis-1/3 h-[23rem] flex flex-col items-center justify-center'>
+              <div className='font-ppMori bg-primary-800 rounded-3xl p-5 border border-primary-500 basis-1/3 h-[23rem] flex flex-col items-center justify-center'>
                 <div>
                   <p className='text-xl'>Intelligent Analytics</p>
                   <p className='text-primary-400 mt-3 text-sm'>Proactive insights and forecasts tied to real business outcomes and cost visibility</p>
@@ -87,8 +87,8 @@ function Section() {
                 </div>
               </div>
             </div>
-            <div className='grid grid-cols-3 gap-[1.5px] w-full'>
-              <div className='col-span-2 font-ppMori bg-primary-800 rounded-3xl p-5 basis-2/3 h-[23rem] flex flex-col items-center justify-center'>
+            <div className='grid grid-cols-3 w-full'>
+              <div className='col-span-2 font-ppMori bg-primary-800 rounded-3xl p-5 border border-primary-500 basis-2/3 h-[23rem] flex flex-col items-center justify-center'>
                 <div className='w-full'>
                   <p className='text-xl'>Compliance Management</p>
                   <p className='text-primary-400 mt-3 text-sm'>Automated compliance across contracts, tax, and regulatory requirements</p>
@@ -103,7 +103,7 @@ function Section() {
                   />
                 </div>
               </div>
-              <div className='col-span-1 font-ppMori bg-primary-800 rounded-3xl p-5 basis-1/3 h-[23rem] flex flex-col items-center justify-center'>
+              <div className='col-span-1 font-ppMori bg-primary-800 rounded-3xl p-5 border border-primary-500 basis-1/3 h-[23rem] flex flex-col items-center justify-center'>
                 <div>
                   <p className='text-xl'>Intelligent Integrated Accounting</p>
                   <p className='text-primary-400 mt-3 text-sm'>Seamless integration and AI driven codification with minimal manual intervention</p>
