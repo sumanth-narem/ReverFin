@@ -6,7 +6,7 @@ function GettingStarted() {
     <>
       <div className='flex items-center justify-center flex-col w-full'>
         <div className='bg-primary-100 w-full max-w-[100rem] border-t border-primary-50 px-12 '>
-          <div className='border-primary-50 border-x pt-10 px-7'>
+          <div className='border-primary-50 border-x pt-10'>
             <Header />
           </div>
         </div>

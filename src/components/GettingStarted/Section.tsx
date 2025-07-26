@@ -61,11 +61,11 @@ function Header() {
 
   return (
     <>
-      <div ref={containerRef} className='h-[1700px]  px-10'>
+      <div ref={containerRef} className='h-[1700px] px-10'>
         <div className='sticky top-0 flex items-center justify-center flex-col w-full '>
           <div className='w-full max-w-[100rem] bg-primary-100'>
             <div className='py-20 h-full w-full flex items-start justify-center flex-row overflow-hidden'>
-              <div className='basis-1/2 px-10 overflow-y-auto'>
+              <div className='basis-1/2 overflow-y-auto'>
                 {steps.map((step, index) => (
                   <div
                     key={index}
