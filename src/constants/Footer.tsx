@@ -76,6 +76,11 @@ export function useFooterLinks(): FooterDataType {
         // link: "https://app.reverfin.ai",
         click: () => openLink("https://app.reverfin.ai"),
       },
+      {
+        title: "Login",
+        // link: "https://app.reverfin.ai",
+        click: () => openLink("https://app.reverfin.ai"),
+      },
     ],
   }), [router]);
 

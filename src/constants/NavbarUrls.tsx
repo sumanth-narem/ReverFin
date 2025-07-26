@@ -129,7 +129,12 @@ export function useNavbarUrls(): URLType[] {
           title: "Sign up",
           click: () => window.open("https://app.reverfin.ai/", "_blank"),
           content: "Get started with smarter finance  no clutter, just clarity.",
-        }
+        },
+        // {
+        //   title: "Log in",
+        //   click: () => window.open("https://app.reverfin.ai/", "_blank"),
+        //   content: "Get started with smarter finance  no clutter, just clarity.",
+        // }
       ]
     }
   ];

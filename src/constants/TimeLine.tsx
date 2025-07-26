@@ -55,7 +55,7 @@ export const TimeLineData: TimeLineDataType[] = [
   {
     title: "Live features",
     content: {
-      heading: "Now Available",
+      heading: "Live features",
       completed: true,
       items: [
         (<><span className="text-white text-sm mb-1">Core Integrations & Data Handling:</span>ERP Integration,

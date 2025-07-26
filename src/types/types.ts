@@ -175,8 +175,15 @@ export interface PlanFeature {
 
 export interface Plan {
   name: string;
+  button: string;
+  link: string;
   amount: string;
   price: string;
   description: string;
   features: PlanFeature[];
+}
+
+export interface GradientColorsType {
+  start: string;
+  end: string;
 }
